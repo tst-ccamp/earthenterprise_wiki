@@ -1,3 +1,5 @@
+![EC](https://drive.google.com/a/google.com/uc?export=view&id=0B9uYVWZiNAG0WVA2M1Q5SkxLc1E)
+
 The Google Earth Enterprise Client (EC) is required to connect to Earth Server and view 3D globes.  This client is not open-sourced; but will continue to be maintained by the Google Earth Team.  
 
 Note that product updates for EC will be limited to critical fixes i.e. security patches and bugs that significantly impair functionality, as determined by Google.  For support on EC, visit the [Earth Help Forum](https://productforums.google.com/forum/#!categories/maps/google-earth).
