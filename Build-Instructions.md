@@ -5,16 +5,17 @@
 Run these commands on either Ubuntu or RHEL/CentOS
 
 1. Install git according to the instructions for your Linux OS below
-2. Clone the gee-os repository with git:
-3. In the build instructions below, the scons commands for building GEE/Fusion have the following options:
+2. Install git-lfs according to the instructions specified at https://git-lfs.github.com
+3. Clone the gee-os repository with git
+4. In the build instructions below, the scons commands for building GEE/Fusion have the following options:
 * internal=1 - Build using non-optimized code, best for development and debugging
 * optimize=1 - Build using optimized code, but with some debugging information
 * release=1 - Build a release using optimized code and no debugging information
 * -j# - Specifies the number of simultaneous build jobs to use. Replace # with an integer. It should roughly match the number of processing cores available
 * --debug=stacktrace - If there is an error within a scons script, this will give you more detailed information on how to debug it
 * --config=force - If you accidentally delete the .sconf_temp directory or make some changes to your system build libraries, use this to force the configuration to run again, otherwise the scons build may complain about missing libraries
-4. Build using the steps bellow for your target platform
-5. Run unit tests
+5. Build using the steps bellow for your target platform
+6. Run unit tests
 * cd NATIVE-OPT-x86_64/bin/tests
 * ./RunAllTests.pl 
 * Or run an individual test
