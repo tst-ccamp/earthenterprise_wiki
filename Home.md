@@ -10,7 +10,7 @@ Earth Enterprise welcomes community contributions! If you’re interested in mak
 
 1. Sign the contributor's agreement. This will allow us to review and accept contributions.
 2. Reach out to us to discuss your contribution. Either update an existing issue, or create a new one that describes the change you would like to work on. If in doubt, feel free to just create a new issue.
-3. Begin a discussion on the issue describing the intended changes. Earth Enterrise developers can help hash out the approach and make sure everyone is on the same page before too much time is spent writing the code changes and associated tests.
+3. Begin a discussion on the issue describing the intended changes. Earth Enterprise developers can help hash out the approach and make sure everyone is on the same page before too much time is spent writing the code changes and associated tests.
 4. Make the code changes and open a pull request.
 ### Other Resources
 
