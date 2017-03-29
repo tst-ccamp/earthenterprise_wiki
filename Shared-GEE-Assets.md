@@ -30,7 +30,7 @@ ETOPO1 is a 1 arc-minute (Roughly 1.85 km) global relief model of Earth's surfac
 | 10            | 1 Gigabyte| [NOAA](https://www.google.com/url?q=https%3A%2F%2Fwww.ngdc.noaa.gov%2Fmgg%2Fglobal%2Fglobal.html&sa=D&sntz=1&usg=AFQjCNE0x3d9GdFR5POePdQr7iiGOFcfNQ)| gs://gee-data/ETOPO1/| Public| No |
 
 ### SRTM30Plus_V8
-![](https://storage.googleapis.com/gee-data/SRTM30PlusV8/SRTM30PlusV8-preview.png)
+![](https://storage.googleapis.com/gee-data/SRTM30PlusV8/srtm30plus.png)
 ##### Description:
 his dataset is a 30-arc second (Roughly 1 Km) resolution global topography/bathymetry grid (SRTM30_PLUS) developed from a wide variety of data sources. Land and ice topography comes from the SRTM30 and ICESat topography, respectively. Ocean bathymetry is based on a new satellite-gravity model where the gravity-to-topography ratio is calibrated using 298 million edited soundings. The main contribution of this dataset is the compilation and editing of the raw soundings, which come from NOAA, individual scientists, SIO, NGA, JAMSTEC, IFREMER, GEBCO, and NAVOCEANO.
 The SRTM30_PLUS dataset was developed by Scripps Institute Of Oceanography, University of California San Diego (UCSD), and served as the initila bathymetry for [Google Ocean in Google Earth and Google Maps](https://www.google.com/url?q=https%3A%2F%2Fscripps.ucsd.edu%2Fnews%2F1871&sa=D&sntz=1&usg=AFQjCNHVh4AYWMEoq6YSrBXP2nIm_X-TOQ).
