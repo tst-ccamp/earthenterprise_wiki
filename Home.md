@@ -14,6 +14,10 @@ Earth Enterprise welcomes community contributions! If you’re interested in mak
 4. Make the code changes and open a pull request.
 ### Other Resources
 
+**Project Site**
+
+http://www.opengee.org
+
 **Documentation**
 
 _Coming soon_
