@@ -50,21 +50,21 @@ scons -j8 optimize=1
 ## Steps for building on RHEL 7
 
 1. Install git
-sudo yum install git
+    >```sudo yum install git```
+1. Install EPEL repo
+    >```sudo yum install epel-release```
+1. Install Development Tools
+    >```sudo yum --setopt=group_package_types=mandatory,default,optional groupinstall "Development Tools"```
+1. Install additional packages
+    > `sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python27-python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c-devel`
+1. Build third-party libraries
+    
+    GEEDIR=<new directory location>/googleclient/geo/earth_enterprise
+    >  `cd $GEEDIR/src`
 
-2. Install Development Tools
-sudo yum --setopt=group_package_types=mandatory,default,optional groupinstall "Development Tools"
-
-3. Install additional packages
-`sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python27-python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c-devel`
- 
-4. Build third-party libraries
-GEEDIR=<new directory location>/googleclient/geo/earth_enterprise
-cd $GEEDIR/src
-scons -j8 optimize=1 third_party
-
-5. Build Fusion/Earth Server
-scons -j8 optimize=1
+    >  `scons -j8 optimize=1 third_party`
+1. Build Fusion/Earth Server
+    > `scons -j8 optimize=1`
 
 ## Build and deploy if you have access to the 5.1.3 installer
 A build and deploy script is provided that can simplify the build and installation process if you have the GEE and Fusion 5.1.3 installers. In the future this script will be updated to work without the previous installers. 
