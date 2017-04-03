@@ -59,6 +59,12 @@ Run these commands on either Ubuntu or RHEL/CentOS
     >```sudo yum install git```
 1. Install EPEL repo
     >```sudo yum install epel-release```
+
+    Note, if this command doesn't work, try the alternate methods listed [here](https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/)
+1. Enable optional repos
+    >```sudo subscription-manager repos --enable=rhel-7-server-optional-rpms```
+
+    >```sudo subscription-manager repos --enable=rhel-7-server-optional-source-rpms```
 1. Install Development Tools
     >```sudo yum --setopt=group_package_types=mandatory,default,optional groupinstall "Development Tools"```
 1. Install additional packages
