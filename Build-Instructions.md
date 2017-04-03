@@ -10,7 +10,7 @@ Run these commands on either Ubuntu or RHEL/CentOS
     1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
     >```git clone git@github.com:<username>/earthenterprise.git```
     1. Method 2: Clone and download LFS files in two steps
-    >```GIT_LFS_SKIP_SMUDGE=1 git@github.com:<username>/earthenterprise.git```
+    >```GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:<username>/earthenterprise.git```
     
     >```cd earthenterprise```
  
