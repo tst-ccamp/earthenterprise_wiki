@@ -7,6 +7,14 @@ Run these commands on either Ubuntu or RHEL/CentOS
 1. Install git according to the instructions for your Linux OS below
 2. Install git-lfs according to the instructions specified at https://git-lfs.github.com
 3. Clone the gee-os repository with git
+    1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
+    >```git clone git@github.com:<username>/earthenterprise.git```
+    1. Method 2: Clone and download LFS files in two steps
+    >```GIT_LFS_SKIP_SMUDGE=1 git@github.com:<username>/earthenterprise.git```
+    
+    >```cd earthenterprise```
+ 
+    >```git lfs pull```
 4. In the build instructions below, the scons commands for building GEE/Fusion have the following options:
     * `internal=1` - Build using non-optimized code, best for development and debugging
     * `optimize=1` - Build using optimized code, but with some debugging information
