@@ -56,7 +56,23 @@ Run these commands on either Ubuntu or RHEL/CentOS
 ## Steps for building on RHEL 7
 
 1. Install git
+
+    Recommended: install the latest version of git:
+
+    1. Enable the IUS repo [ [More Info] ](https://ius.io/GettingStarted/). 
+    
+        >```cd /tmp```
+
+        >```wget https://rhel7.iuscommunity.org/ius-release.rpm```
+
+        >```sudo yum install ius-release.rpm```
+    1. Install git 2.x
+        >```sudo yum install git2u-all```
+
+    Or install the system default version of git (1.8):
+
     >```sudo yum install git```
+
 1. Install EPEL repo
     >```sudo yum install epel-release```
 
