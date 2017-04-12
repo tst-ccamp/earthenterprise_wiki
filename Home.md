@@ -18,6 +18,7 @@ Client - The Google Earth Enterprise Client (EC) and Google Maps Javascript API 
 
 For more information please take a look at the 'Overview' and 'Fusion Tutorial' articles in our docs.
 
+### Other Resources
 **Project Site**
 
 http://www.opengee.org
