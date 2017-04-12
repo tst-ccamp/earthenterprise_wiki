@@ -3,6 +3,10 @@
 1. [Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS and RHEL 7](#building-earth-enterprise-fusion-server-on-ubuntu-1404-lts-and-rhel-7)
 2. [Building Portable Server on Linux and Windows](#building-portable-server-on-linux-and-windows)
 
+    2.1. [Portable on Linux](#portable-on-linux)
+
+    2.2. [Portable on Windows](#portable-on-windows)
+
 
 
 # Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS and RHEL 7
@@ -120,18 +124,70 @@ A build and deploy script is provided that can simplify the build and installati
 
 
 # Building Portable Server on Linux and Windows
-A Python script for building the Portable Server for Linux and Windows is being reviewed. Upon approval, and merging, Portable Server would be built as follows:
+
+A Python script for building the Portable Server for Linux and Windows is being reviewed.  Upon approval, and merging, Portable Server would be built as described in the following subsections.
+
+Software build prerequisites:
+
+    * Python
+    * Python pexpect installed
+    * Swig with support for Python
+    * g++
+
+Portable run-time prerequisites:
+
+    * Python
+    * Python tornado installed
+
+
+## Portable on Linux
+
+Make sure you have Python, the `pexpect` Pip package, as well as `tornado`, g++, and Swig with Python support installed.  E.g.:
+
+    sudo apt-get install g++ python python-pexpect python-tornado swig
+
+Run
 
     earthenterprise/earth_enterprise/src/portableserver/build.py
 
-If you run on Linux, the script will produce a compressed archive with a name that looks like `earthenterprise/earth_enterprise/src/portableserver/build/portableserver-linux-5.1.3-20170412.tar.gz`. The build date part of the file name will change depending on the day you build. On Windows the file name would look like `portableserver-linux-5.1.3-20170412.zip`.
+The build script will produce a compressed archive with a name that looks like `earthenterprise/earth_enterprise/src/portableserver/build/portableserver-linux-5.1.3-20170412.tar.gz`. The build date part of the file name will change depending on the day you build.
 
-To run Portable Server from one of these archive packages: 
+To run Portable Server from this archive package:
 
     1. Extract all archive contents
     2. cd portableserver-linux-5.1.3-20170412/server/ #(substituting your extracted directory)
     3. python portable_server.py
 
-You can edit `portableserver-linux-5.1.3-20170412/server/portable.cfg` and `portableserver-windows-5.1.3-20170412/server/remote.cfg` for your configuration needs before starting the server.
+You can edit `portableserver-linux-5.1.3-20170412/server/portable.cfg` and `portableserver-linux-5.1.3-20170412/server/remote.cfg` for your configuration needs before starting the server.
 
-To clean build files, run with the `-c`, or `--clean` command-line parameter.
+To clean build files, run 
+
+    earthenterprise/earth_enterprise/src/portableserver/build.py --clean
+
+
+## Portable on Windows
+
+Make sure you have [MinGW](http://www.mingw.org/) with a g++ compiler, [Swig](http://www.swig.org/download.html) with support for Python, and [Python](https://www.python.org/downloads/) 2.7 or later installed.
+
+Once you have Python installed, make sure you have `pexpect` and `tornado` installed. E.g.:
+
+    cd \Python27\Scripts
+    pip install pexpect tornado
+
+Run
+
+    python earthenterprise\earth_enterprise\src\portableserver\build.py
+
+The build script will produce a compressed archive with a name that looks like `earthenterprise\earth_enterprise\src\portableserver\build\portableserver-windows-5.1.3-20170412.zip`. The build date part of the file name will change depending on the day you build.
+
+To run Portable Server from this archive package:
+
+    1. Extract all archive contents
+    2. cd portableserver-windows-5.1.3-20170412\server\ #(substituting your extracted directory)
+    3. python portable_server.py
+
+You can edit `portableserver-windows-5.1.3-20170412\server\portable.cfg` and `portableserver-windows-5.1.3-20170412\server\remote.cfg` for your configuration needs before starting the server.
+
+To clean build files, run 
+
+    python earthenterprise\earth_enterprise\src\portableserver\build.py --clean
