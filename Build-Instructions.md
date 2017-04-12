@@ -1,4 +1,4 @@
-# Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS and RHEL 7 
+# Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS and RHEL 7
 
 ## Common steps
 
@@ -111,3 +111,20 @@ A build and deploy script is provided that can simplify the build and installati
 
     > `./tmp/build_and_deploy_gee.sh --build`
 
+
+# Building Portable Server on Linux and Windows
+A Python script for building the Portable Server for Linux and Windows is being reviewed. Upon approval, and merging, Portable Server would be built as follows:
+
+    earthenterprise/earth_enterprise/src/portableserver/build.py
+
+If you run on Linux, the script will produce a compressed archive with a name that looks like `earthenterprise/earth_enterprise/src/portableserver/build/portableserver-linux-5.1.3-20170412.tar.gz`. The build date part of the file name will change depending on the day you build. On Windows the file name would look like `portableserver-linux-5.1.3-20170412.zip`.
+
+To run Portable Server from one of these archive packages: 
+
+    1. Extract all archive contents
+    2. cd portableserver-linux-5.1.3-20170412/server/ #(substituting your extracted directory)
+    3. python portable_server.py
+
+You can edit `portableserver-linux-5.1.3-20170412/server/portable.cfg` and `portableserver-windows-5.1.3-20170412/server/remote.cfg` for your configuration needs before starting the server.
+
+To clean build files, run with the `-c`, or `--clean` command-line parameter.
