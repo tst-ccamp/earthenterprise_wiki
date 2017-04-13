@@ -8,13 +8,13 @@ Earth Enterprise is the open source release of Google Earth Enterprise, a geospa
 
 The application suite consists of four core components:
 
-Fusion - Builds 3D Earth and 2D Map from imagery, vector and terrain source data.
+**Fusion** - Builds 3D Earth and 2D Map from imagery, vector and terrain source data.
 
-Server - Apache -based server which hosts 3D Earth, 2D Map build by Fusion and Portable 3D/2D globes.
+**Server** - Apache -based server which hosts 3D Earth, 2D Map build by Fusion and Portable 3D/2D globes.
 
-Portable - Tornado-based server which hosts Portable 3D/2D globes in a local-server configuration.
+**Portable** - Tornado-based server which hosts Portable 3D/2D globes in a local-server configuration.
 
-Client - The Google Earth Enterprise Client (EC) and Google Maps Javascript API V3 used to view 3D globes and 2D maps, respectively.
+**Client** - The Google Earth Enterprise Client (EC) and Google Maps Javascript API V3 used to view 3D globes and 2D maps, respectively.
 
 For more information please take a look at the 'Overview' and 'Fusion Tutorial' articles in our docs.
 
