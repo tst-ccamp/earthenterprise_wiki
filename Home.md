@@ -23,10 +23,17 @@ For more information please take a look at the 'Overview' and 'Fusion Tutorial' 
 
 http://www.opengee.org
 
-**Documentation**
+**GEE User/Administrator Documentation**
 
-_Coming soon_
+http://www.opengee.org/geedocs/
 
 **Forum**
 
 https://groups.google.com/forum/#!forum/google-earth-enterprise
+
+**Slack Chatroom**
+
+Use this link to sign up for the Slack Chatroom where you can chat with developers and users of Open GEE
+
+http://slack.opengee.org
+
