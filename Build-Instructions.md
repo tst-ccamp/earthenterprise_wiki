@@ -167,12 +167,35 @@ To clean build files, run
 
 ## Portable on Windows
 
-Make sure you have [MinGW](http://www.mingw.org/) with a g++ compiler, [Swig](http://www.swig.org/download.html) with support for Python, and [Python](https://www.python.org/downloads/) 2.7 or later installed.
+### Install a g++ Compiler
+
+You can install [MinGW](http://www.mingw.org/) with a g++ compiler.
+
+Make sure `g++` is in your `PATH`.
+
+
+### Install Swig with Python Support
+
+1. Download a [Swig](http://www.swig.org/download.html) Zip for Windows.
+2. Extract the Zip in a desired installation directory.
+3. Add the installation directory you extracted to your `PATH`.
+
+
+### Install Python
+
+Download and install [Python](https://www.python.org/downloads/) 2.7 or later.
 
 Once you have Python installed, make sure you have `pexpect` and `tornado` installed. E.g.:
 
     cd \Python27\Scripts
     pip install pexpect tornado
+
+Add the directory you installed Python in to your `PATH`.
+
+
+### Build Portable Server
+
+Open a command prompt with `g++`, `swig` and `python` in your `PATH`.
 
 Run
 
