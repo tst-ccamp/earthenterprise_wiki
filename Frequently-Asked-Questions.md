@@ -1,13 +1,12 @@
-## Why do I get an error complaining about a gzip file not being valid? (gzip: stdin: not in gzip format)
+## 1. Why do I get an error complaining about a gzip file not being valid? (gzip: stdin: not in gzip format)
 Open GEE uses git-lfs to store its large files, such as gz files, in GitHub. Follow the [GitHub git-lfs Instructions](https://git-lfs.github.com/) on how to install git-lfs. After installing the extension you will need to clone the repo again or try running `git lfs pull` in the repo.
-
-## I've signed a CLA. Why does GitHub have an X on my commit and it says "Failure: need a CLA for one or more commit authors" when I hover over the X?
+## 2. I've signed a CLA. Why does GitHub have an X on my commit and it says "Failure: need a CLA for one or more commit authors" when I hover over the X?
 The email field set on each commit should match the email address specified in your GitHub account. Follow the instructions [here](https://help.github.com/articles/setting-your-email-in-git/). Next, rebase your commits, verify they have the correct email set, and do `git push origin --force` on the branch you want to merge.
 
-## Why do I get errors downloading files due to API Rate Limit?
+## 3. Why do I get errors downloading files due to API Rate Limit?
 This happens because the clone/download was initiated without authenticating with Github. Add your ssh key and clone the repository using SSH.
 
-## I’ve built GEE Fusion and Server. Now how do I install them?
+## 4. I’ve built GEE Fusion and Server. Now how do I install them?
 There is currently no official installer for the open source version of GEE Fusion and Server, but we're working on it. Previous versions of GEE used a commercial tool that requires a license to create installers. Since that option is not available for the open source version, we are rewriting the installers from scratch.  There are two workarounds that you can try:
 
  - You can run the beta version of the installer, which is available on the [fusion_installer branch](https://github.com/google/earthenterprise/tree/fusion_installer).  You can also see it on the related [pull request](https://github.com/google/earthenterprise/pull/43).  Keep in mind that this installer is in active development and may contain bugs. Although unlikely, some bugs may cause problems with your Linux installation. We recommend testing this installer on a virtual machine or on non-production hardware. We expect (but do not guarantee) that the installer will work on Ubuntu 14.04, but it may fail on other operating systems. However, you are welcome to make changes to the script in order to get it to work on your system.
