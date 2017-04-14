@@ -1,4 +1,4 @@
-## Why do I get an error complaining about gz file not being valid?
+## Why do I get an error complaining about a gzip file not being valid? (gzip: stdin: not in gzip format)
 Open GEE uses git-lfs to store its large files, such as gz files, in GitHub. Follow the [GitHub git-lfs Instructions](https://git-lfs.github.com/) on how to install git-lfs. After installing the extension you will need to clone the repo again.
 
 ## I've signed a CLA. Why does GitHub have an X on my commit and it says "Failure: need a CLA for one or more commit authors" when I hover over the X?
