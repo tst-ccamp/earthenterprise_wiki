@@ -169,7 +169,7 @@ To clean build files, run
 
 ### Install a g++ Compiler
 
-You can install [MinGW](http://www.mingw.org/) with a g++ compiler.
+You can install [MinGW](http://www.mingw.org/) with a g++ compiler, or run the build from a Git-BASH or Git-Cmd shell from [Git-Scm](https://git-scm.com/), which should come with `g++`.
 
 Make sure `g++` is in your `PATH`.
 
