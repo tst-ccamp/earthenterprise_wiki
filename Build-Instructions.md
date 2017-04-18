@@ -125,8 +125,6 @@ A build and deploy script is provided that can simplify the build and installati
 
 # Building Portable Server on Linux and Windows
 
-A Python script for building the Portable Server for Linux and Windows is being reviewed.  Upon approval, and merging, Portable Server would be built as described in the following subsections.
-
 Software build prerequisites:
 
     * Python
