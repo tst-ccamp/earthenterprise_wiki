@@ -1,6 +1,6 @@
 ## Table of Contents
 
-1. [Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS and RHEL 7](#building-earth-enterprise-fusion-server-on-ubuntu-1404-lts-and-rhel-7)
+1. [Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS and RHEL 7 64-bit](#building-earth-enterprise-fusion-server-on-ubuntu-1404-lts-and-rhel-7)
 2. [Building Portable Server on Linux and Windows](#building-portable-server-on-linux-and-windows)
 
     2.1. [Portable on Linux](#portable-on-linux)
