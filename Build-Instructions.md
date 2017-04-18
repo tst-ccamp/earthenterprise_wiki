@@ -9,7 +9,7 @@
 
 
 
-# Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS and RHEL 7
+# Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS and RHEL 7 (64-bit)
 
 ## Common steps
 
