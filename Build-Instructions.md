@@ -63,9 +63,8 @@ Run these commands on either Ubuntu or RHEL/CentOS
     > `sudo apt-get install gcc g++ scons automake autoconf libperl4-corelibs-perl libtool xorg-dev doxygen python-dev alien swig libgtest-dev libstdc++6 libxml2-dev gettext libxinerama-dev libxft-dev libxrandr-dev libxcursor-dev libgdbm-dev libc6 libc6-dev libmng-dev zlib1g-dev libcap-dev libpng12-0 libpng12-dev freeglut3-dev flex libx11-dev bison++ bisonc++ libjpeg-dev libjpeg8-dev python2.7 python2.7-dev libogdi3.2-dev libgif-dev libxerces-c-dev libgeos-dev libgeos++-dev libfreetype6 libfreetype6-dev python-imaging libproj-dev python-setuptools libgif-dev libxerces-c-dev libcap-dev libpq-dev openssl libxml2-utils libxmu-dev`
 
 3. Build the third party library:
-    For reference: GEEDIR=<new directory location>/googleclient/geo/earth_enterprise
 
-    > `cd $GEEDIR/src`
+    > `cd earthenterprise/earth_enterprise/src`
 
     > `scons -j8 optimize=1 third_party`
 
@@ -106,8 +105,7 @@ Run these commands on either Ubuntu or RHEL/CentOS
     > `sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c xerces-c-devel`
 1. Build third-party libraries
     
-    GEEDIR=<new directory location>/googleclient/geo/earth_enterprise
-    >  `cd $GEEDIR/src`
+    >  `cd earthenterprise/earth_enterprise/src`
 
     >  `scons -j8 optimize=1 third_party`
 1. Build Fusion/Earth Server
@@ -118,7 +116,7 @@ A build and deploy script is provided that can simplify the build and installati
 1. Install GEE and Fusion 5.1.3
 1. Clone repo as above
 1. Build and deploy:
-    > `cd $GEEDIR/src`
+    > `cd earthenterprise/earth_enterprise/src`
 
     > `./tmp/build_and_deploy_gee.sh --build`
 
