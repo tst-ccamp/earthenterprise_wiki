@@ -13,3 +13,10 @@ There is currently no official installer for the open source version of GEE Fusi
  - If you have access to GEE Server and Fusion Pro 5.1.3, you can install that version of Fusion and Server, and then run ``tmp/build_and_deploy_gee.sh --build`` to build and install the open source version of GEE as described in the [build instructions](https://github.com/google/earthenterprise/wiki/Build-Instructions#build-and-deploy-if-you-have-access-to-the-513-installer). GEE 5.1.3 is the last commercial version of GEE and is not available publicly, so if you or your organization did not purchase a GEE license from Google, you probably do not have access to GEE 5.1.3.
 
 If neither of the above options works for you, please be patient.  We are working to create an open source installer for Ubuntu 14.04 and Red Hat Enterprise Linux 7 and hope to have it available soon.  Installers for other operating systems such as Ubuntu 16.04 and CentOS 6 and 7 may become available in the future depending on project priorities and developer availability.
+
+## 5. Submitting Issues
+If you are experiencing issues with GEE and want to report a bug please include the following in your issue:
+* Command that results in error
+* The directory the command was run in
+* Expected result
+* Reproduction steps
