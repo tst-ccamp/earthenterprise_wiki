@@ -7,8 +7,6 @@ This is the tracking page for issues being tracked in the project. It will be re
 
 [#88 scons install errors-out](../issues/88)
 
-[#82 Rename the old installer directory to avoid confusion](../issues/82)
-
 [#52 Configure pylint and git hook for pre-commit?](../issues/52)
 
 [#35 Clean up SConstruct/SConscript files for native build](../issues/35)
