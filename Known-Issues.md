@@ -7,29 +7,9 @@ This is the tracking page for issues being tracked in the project. It will be re
 
 [#88 scons install errors-out](../issues/88)
 
-[#84 Update the Fusion Tutorial hosted on OpenGEE to remove references to jp2 files](../issues/84)
-
 [#82 Rename the old installer directory to avoid confusion](../issues/82)
 
-[#74 Package Portable Server for Mac OS](../issues/74)
-
-[#73 Package Portable Server for Windows](../issues/73)
-
-[#72 Package Portable Server for Red Hat OSes](../issues/72)
-
-[#71 Package Portable Server for Ubuntu](../issues/71)
-
-[#69 Create script that a developer can use to clone repo](../issues/69)
-
-[#68 Add check to scons build to make sure git-lfs is installed](../issues/68)
-
-[#53 Fusion Pro support for JPEG 2000](../issues/53)
-
 [#52 Configure pylint and git hook for pre-commit?](../issues/52)
-
-[#48 Write scripts for geserver uninstall](../issues/48)
-
-[#47 write scripts for geserver install](../issues/47)
 
 [#35 Clean up SConstruct/SConscript files for native build](../issues/35)
 
