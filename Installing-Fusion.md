@@ -8,22 +8,22 @@ To install Fusion, you must prepare the install package from a successful build 
 
 [Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS, Ubuntu 16.04 LTS and RHEL 7 (64-bit)](#building-earth-enterprise-fusion-server-on-ubuntu-1404-lts-and-rhel-7-64-bit)
 
-##**Building the Install Package**
+## **Building the Install Package**
 You will need to build the install package.  The install package is built using scons.  Please note that the default temporary staging area for the install package is /tmp/fusion_os_install.  This can be changed by specifying a different **installdir** parameter. Please note that all steps must use the same directory location.
 
 To build the install package, run the following commands:
 
-####**Step 1: Mandatory install step**
+#### **Step 1: Mandatory install step**
 
     cd /earth_enterprise/src
     sudo scons -j2 installdir=/tmp/fusion_os_install release=1 install
 
-####**Step 2: Mandatory build install package step**
+#### **Step 2: Mandatory build install package step**
 
     cd ..  (you should be in /earth_enterprise)
     sudo scons -j2 installdir=/tmp/fusion_os_install 
 
-####**Step 3: Optional step if you want to install the Fusion tutorial data files**
+#### **Step 3: Optional step if you want to install the Fusion tutorial data files**
 ##### **A: Prepare the location**
 
     cd earth_enterprise/tutorial 
@@ -41,7 +41,7 @@ You will need to run the following command to download the tutorial file archive
 
 **At this point, you have fully built the install package.  The Fusion installer uses this package to install the fusion service/console.
 
-##**Installing Fusion**
+## **Installing Fusion**
 To install fusion run the following command:
 
     cd earth_enterprise/src/installer
