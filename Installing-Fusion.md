@@ -13,7 +13,7 @@ You will need to build the install package.  The install package is built using 
 
 To build the install package, run the following commands:
 
-#### **Step 1: Mandatory install step**
+#### **Step 1: Mandatory build install package step**
 
     cd /earth_enterprise/src
     sudo scons -j2 installdir=/tmp/fusion_os_install release=1 install
