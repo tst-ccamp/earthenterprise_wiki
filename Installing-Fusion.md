@@ -35,7 +35,7 @@ You will need to run the following command to download the tutorial file archive
     wget http://data.opengee.org/FusionTutorial-Full.tar.gz
     tar -xvzf FusionTutorial-Full.tar.gz -C FusionTutorial
 
-##### **C: Add tutorial files to install package**
+##### **C: Add tutorial files to the install package**
 
     sudo scons installdir=/tmp/fusion_os_install
 
