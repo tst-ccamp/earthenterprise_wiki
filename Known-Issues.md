@@ -13,8 +13,6 @@ This is the tracking page for issues being tracked in the project. It will be re
 
 [#82 Rename the old installer directory to avoid confusion](../issues/82)
 
-[#80 Provide the option to use the system GDAL install](../issues/80)
-
 [#74 Package Portable Server for Mac OS](../issues/74)
 
 [#73 Package Portable Server for Windows](../issues/73)
@@ -29,8 +27,6 @@ This is the tracking page for issues being tracked in the project. It will be re
 
 [#65 Sconstruct File found](../issues/65)
 
-[#62 Improve Documentation navigation on opengee.org enhancement](../issues/62)
-
 [#53 Fusion Pro support for JPEG 2000](../issues/53)
 
 [#52 Configure pylint and git hook for pre-commit?](../issues/52)
@@ -42,16 +38,6 @@ This is the tracking page for issues being tracked in the project. It will be re
 [#35 Clean up SConstruct/SConscript files for native build](../issues/35)
 
 [#34 Scons build creates temporary directories named “0” bug](../issues/34)
-
-[#33 Unubdle protobuf library](../issues/33)
-
-[#31 Unbundle Skia library](../issues/31)
-
-[#30 Fusion uninstall scripts](../issues/30)
-
-[#28 Write shell script for Fusion](../issues/28)
-
-[#27 Update version number in About of GEE Fusion](../issues/27)
 
 [#26 Fusion UI and geserveradmin get segmentation fault if they cannot contact Publish module](../issues/26)
 
@@ -65,12 +51,6 @@ This is the tracking page for issues being tracked in the project. It will be re
 
 [#8 Ensure GEE Portable Cutter Job Completes](../issues/8)
 
-[#7 GEE Portable Server - add HTTPS support](../issues/7)
-
 [#6 Bug in Portable UI when canceling](../issues/6)
 
 [#4 Google basemap fails to load in 2D Mercator Maps](../issues/4)
-
-[#3 Add multithreaded capability to gecombineterrain](../issues/3)
-
-[#2 Restore support for MrSID imagery in Fusion Pro](../issues/2)
