@@ -1,8 +1,6 @@
 # Known Issues
 This is the tracking page for issues being tracked in the project. It will be refreshed every Friday. This list will also be packaged with the release when a release is packaged.
 
-[#96 Build Fusion/Earth Server from third_party/python/SConscript](../issues/96)
-
 [#92 Default sourcedate for terrain / imagery import command doesn't work](../issues/92)
 
 [#91 Portable server is missing python-tornado dependency](../issues/91)
@@ -24,8 +22,6 @@ This is the tracking page for issues being tracked in the project. It will be re
 [#69 Create script that a developer can use to clone repo](../issues/69)
 
 [#68 Add check to scons build to make sure git-lfs is installed](../issues/68)
-
-[#65 Sconstruct File found](../issues/65)
 
 [#53 Fusion Pro support for JPEG 2000](../issues/53)
 
