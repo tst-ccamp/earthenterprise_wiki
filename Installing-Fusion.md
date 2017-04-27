@@ -2,8 +2,6 @@
 The installer has been successfully tested on Ubuntu 14.04, Ubuntu 16.04 and Red Hat Enterprise Linux 7.
 
 ## **Prerequisite Steps**
-You must have a successful build of both the third party libraries and the Fusion source code.  See the following for building the source code:
-
 To install Fusion, you must prepare the install package from a successful build of Fusion and Third Party packages (in release mode).  For more information on building Fusion, please review the following link:
 
 [Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS, Ubuntu 16.04 LTS and RHEL 7 (64-bit)](#building-earth-enterprise-fusion-server-on-ubuntu-1404-lts-and-rhel-7-64-bit)
