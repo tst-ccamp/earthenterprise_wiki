@@ -49,5 +49,4 @@ The installer can use the default install directory of /tmp/fusion_os_install.  
 
 **Usage:**  
 
-`sudo ./install_fusion.sh [-dir /tmp/fusion_os_install -ar /gevol/assets -sv /gevol/src -u fusionuser`
-             `-g gegroup -nobk -nop -hnf -nostart]`
+`sudo ./install_fusion.sh [-dir /tmp/fusion_os_install -ar /gevol/assets -sv /gevol/src -u fusionuser -g gegroup -nobk -nop -hnf -nostart]`
