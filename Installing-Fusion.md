@@ -45,4 +45,28 @@ To install fusion run the following command:
     cd earth_enterprise/src/installer
     sudo ./install_fusion.sh
 
+The installer can use the default install directory of /tmp/fusion_os_install.  If you placed the install package in a different location, you can pass that location as a parameter to the installer.
+
+Usage:  sudo ./install_fusion.sh [-dir /tmp/fusion_os_install -ar /gevol/assets -sv /gevol/src -u fusionuser
+                -g gegroup -nobk -nop -hnf -nostart]
+
+-h              Help - display this help screen
+-dir            Temp Install Directory - specify the temporary install directory. Default is [/tmp/fusion_os_install].
+-u              Fusion User Name - the user name to use for Fusion. Default is [gefusionuser].
+                Note: this is only used for new installations.
+-g              User Group Name - the group name to use for the Fusion user. Default is [gegroup].
+                Note: this is only used for new installations.
+-ar             Asset Root Mame - the name of the asset root volume.  Default is [/gevol/assets].
+                Note: this is only used for new installations. Specify absolute paths only.
+-sv             Source Volume Name - the name of the source volume.  Default is [/gevol/src].
+                Note: this is only used for new installations. Specify absolute paths only.
+-nobk           No Backup - do not backup the current fusion setup. Default is to backup
+                the setup before installing.
+-nop            No Purge - do not delete the temporary install directory upon successful run of the installer.
+                Default is to delete the directory after successful installation.
+-nostart        Do Not Start Fusion - after install, do not start the Fusion daemon.  Default is to start the daemon.
+-hnf            Hostname Force - force the installer to continue installing with a bad
+                hostname. Bad hostname values are [empty linux localhost dhcp bootp].
+-hnmf           Hostname Mismatch Force - force the installer to continue installing with a
+                mismatched hostname.
 
