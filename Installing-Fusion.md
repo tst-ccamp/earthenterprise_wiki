@@ -48,5 +48,6 @@ To install fusion run the following command:
 The installer can use the default install directory of /tmp/fusion_os_install.  If you placed the install package in a different location, you can pass that location as a parameter to the installer.
 
 **Usage:**  
+    sudo scons -j2 installdir=/tmp/fusion_os_install 
 
 `sudo ./install_fusion.sh [-dir /tmp/fusion_os_install -ar /gevol/assets -sv /gevol/src -u fusionuser -g gegroup -nobk -nop -hnf -nostart]`
