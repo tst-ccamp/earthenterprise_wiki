@@ -9,12 +9,14 @@ To install Fusion, you must prepare the install package from a successful build 
 ## **Building the Install Package**
 You will need to build the install package.  The install package is built using scons.  Please note that the default temporary staging area for the install package is /tmp/fusion_os_install.  This can be changed by specifying a different **installdir** parameter. Please note that all steps must use the same directory location.
 
+In the commands below, you may need to change "optimize=1" to "release=1", depending on which you used when building Fusion.  You should use the same flag for both the build and install commands.
+
 To build the install package, run the following commands:
 
 #### **Step 1: Mandatory build install package step**
 
     cd /earth_enterprise/src
-    sudo scons -j2 installdir=/tmp/fusion_os_install release=1 install
+    sudo scons -j2 installdir=/tmp/fusion_os_install optimize=1 install
 
 #### **Step 2: Mandatory build install package step**
 
