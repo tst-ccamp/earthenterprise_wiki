@@ -13,12 +13,12 @@ In the commands below, you may need to change "optimize=1" to "release=1", depen
 
 To build the install package, run the following commands:
 
-#### **Step 1: Mandatory build install package step**
+#### **Step 1: Mandatory - copy binaries**
 
     cd /earth_enterprise/src
     sudo scons -j2 installdir=/tmp/fusion_os_install optimize=1 install
 
-#### **Step 2: Mandatory build install package step**
+#### **Step 2: Mandatory - copy data and docs**
 
     cd ..  (you should be in /earth_enterprise)
     sudo scons -j2 installdir=/tmp/fusion_os_install 
