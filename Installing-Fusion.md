@@ -21,7 +21,7 @@ To build the install package, run the following commands:
 #### **Step 2: Mandatory - copy data and docs**
 
     cd ..  (you should be in /earth_enterprise)
-    sudo scons -j2 installdir=/tmp/fusion_os_install 
+    sudo scons -j2 installdir=/tmp/fusion_os_install install 
 
 #### **Step 3: Optional step if you want to install the Fusion tutorial data files**
 ##### **A: Prepare the location**
