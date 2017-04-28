@@ -68,7 +68,7 @@ Run these commands on either Ubuntu or RHEL/CentOS
 
     > `scons -j8 optimize=1 third_party`
 
-4. Build Fusion/Earth Server from third_party/python/SConscript: remove -idirafter replacement for sandbox path
+4. Build Fusion/Earth Server:
     > `scons -j8 optimize=1`
 
 ## Steps for building on RHEL 7
