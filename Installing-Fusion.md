@@ -16,12 +16,12 @@ To build the install package, run the following commands:
 #### **Step 1: Mandatory - copy binaries**
 
     cd /earth_enterprise/src
-    sudo scons -j2 installdir=/tmp/fusion_os_install optimize=1 install
+    scons -j2 installdir=/tmp/fusion_os_install optimize=1 install
 
 #### **Step 2: Mandatory - copy data and docs**
 
     cd ..  (you should be in /earth_enterprise)
-    sudo scons -j2 installdir=/tmp/fusion_os_install install 
+    scons -j2 installdir=/tmp/fusion_os_install install 
 
 #### **Step 3: Optional step if you want to install the Fusion tutorial data files**
 ##### **A: Prepare the location**
