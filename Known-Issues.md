@@ -1,6 +1,8 @@
 # Known Issues
 This is the tracking page for issues, primarily bugs, on the project. It will be refreshed every Friday. This list will also be packaged with each release of the project.
 
+[#103 .htaccess permissions are wrong](../issues/103)
+
 [#92 Default sourcedate for terrain / imagery import command doesn't work](../issues/92)
 
 [#91 Portable server is missing python-tornado dependency](../issues/91)
