@@ -53,3 +53,15 @@ Run the following to get an explanation of all available customizations:
 
 `sudo ./install_fusion.sh -h`
 
+## **Installing Earth Server**
+To install fusion run the following command:
+
+    cd earth_enterprise/src/installer
+    sudo ./install_server.sh
+
+The installer can use the default install directory of /tmp/fusion_os_install.  If you placed the install package in a different location, you can pass that location as a parameter to the installer.
+
+Run the following to get an explanation of all available customizations:
+
+`sudo ./install_server.sh -h`
+
