@@ -111,6 +111,9 @@ Run these commands on either Ubuntu or RHEL/CentOS
 1. Build Fusion/Earth Server
     > `scons -j8 optimize=1`
 
+## Install Fusion and Earth Server
+For information on how to install Fusion Pro and/or Earth Server, see [Install Fusion or Earth Server](Install-Fusion-or-Earth-Server)
+
 ## Build and deploy if you have access to the 5.1.3 installer
 A build and deploy script is provided that can simplify the build and installation process if you have the GEE and Fusion 5.1.3 installers. In the future this script will be updated to work without the previous installers. 
 1. Install GEE and Fusion 5.1.3
