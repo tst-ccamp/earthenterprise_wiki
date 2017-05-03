@@ -37,3 +37,8 @@ Use this link to sign up for the Slack Chatroom where you can chat with develope
 
 http://slack.opengee.org
 
+**Gitter Chatroom**
+
+Use this link to join the chat using Gitter (linked with the Slack channel)
+
+[![Join the chat at https://gitter.im/earthenterprise/Lobby](https://badges.gitter.im/earthenterprise/Lobby.svg)](https://gitter.im/earthenterprise/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
