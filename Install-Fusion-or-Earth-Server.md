@@ -37,7 +37,7 @@ You will need to run the following command to download the tutorial file archive
 
 ##### **C: Add tutorial files to the install package**
 
-    sudo scons installdir=/tmp/fusion_os_install
+    scons installdir=/tmp/fusion_os_install
 
 **At this point, you have fully built the install package.  The Fusion and Earth Server installers use this package to install their respective components.
 
