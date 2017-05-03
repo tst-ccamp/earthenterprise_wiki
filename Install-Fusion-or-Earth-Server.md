@@ -2,14 +2,14 @@
 The installer has been successfully tested on Ubuntu 14.04, Ubuntu 16.04 and Red Hat Enterprise Linux 7.
 
 ## **Prerequisite Steps**
-To install Fusion, you must prepare the install package from a successful build of Fusion and Third Party packages (in release mode).  For more information on building Fusion, please review the following link:
+To install Fusion or Earth Server, you must prepare the install package from a successful build of the source (which contains Fusion and Earth Server source code) and Third Party packages (in release mode).  For more information on building Fusion, please review the following link:
 
 [Building Earth Enterprise (Fusion, Server) on Ubuntu 14.04 LTS, Ubuntu 16.04 LTS and RHEL 7](Build-Instructions)
 
 ## **Building the Install Package**
 You will need to build the install package.  The install package is built using scons.  Please note that the default temporary staging area for the install package is /tmp/fusion_os_install.  This can be changed by specifying a different **installdir** parameter. Please note that all steps must use the same directory location.
 
-In the commands below, you may need to change "optimize=1" to "release=1", depending on which you used when building Fusion.  You should use the same flag for both the build and install commands.
+In the commands below, you may need to change "optimize=1" to "release=1", depending on which type you used when building the source code.  You should use the same flag for both the build and install commands.
 
 To build the install package, run the following commands:
 
