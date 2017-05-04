@@ -7,14 +7,7 @@ The email field set on each commit should match the email address specified in y
 This happens because the clone/download was initiated without authenticating with Github. Add your ssh key and clone the repository using SSH.
 
 ## 4. I’ve built GEE Fusion and Server. Now how do I install them?
-Instructions for installing GEE Fusion are available [on the wiki](https://github.com/google/earthenterprise/wiki/Installing-Fusion).
-
-There is currently no official installer for the open source version of GEE Server, but we're working on it. Previous versions of GEE used a commercial tool that requires a license to create installers. Since that option is not available for the open source version, we are rewriting the installer from scratch.  There are two workarounds that you can try:
-
- - You can run the beta version of the installer, which is available on the [I-47-geserver-install branch](https://github.com/tst-ccamp/earthenterprise/tree/I-47-geserver-install).  Keep in mind that this installer is incomplete, in active development, and may contain bugs. Although unlikely, some bugs may cause problems with your Linux installation. We recommend testing this installer on a virtual machine or on non-production hardware.
- - If you have access to GEE Server and Fusion Pro 5.1.3, you can install that version of Fusion and Server, and then run ``tmp/build_and_deploy_gee.sh --build`` to build and install the open source version of GEE as described in the [build instructions](https://github.com/google/earthenterprise/wiki/Build-Instructions#build-and-deploy-if-you-have-access-to-the-513-installer). GEE 5.1.3 is the last commercial version of GEE and is not available publicly, so if you or your organization did not purchase a GEE license from Google, you probably do not have access to GEE 5.1.3.
-
-If neither of the above options works for you, please be patient.  We are working to create an open source installer for Ubuntu 14.04 and Red Hat Enterprise Linux 7 and hope to have it available soon.  Installers for other operating systems such as Ubuntu 16.04 and CentOS 6 and 7 may become available in the future depending on project priorities and developer availability.
+Instructions for installing GEE Fusion and Server are available [on the wiki](https://github.com/google/earthenterprise/wiki/Install-Fusion-or-Earth-Server).
 
 ## 5. Submitting Issues
 If you are experiencing issues with GEE and want to report a bug please include the following in your issue:
