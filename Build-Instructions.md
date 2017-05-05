@@ -78,7 +78,8 @@ Run these commands on either Ubuntu or RHEL/CentOS
     Recommended: install the latest version of git:
 
     1. Enable the IUS repo [ [More Info] ](https://ius.io/GettingStarted/). 
-    
+        >```sudo yum install -y wget```    
+
         >```cd /tmp```
 
         >```wget https://rhel7.iuscommunity.org/ius-release.rpm```
@@ -101,6 +102,8 @@ Run these commands on either Ubuntu or RHEL/CentOS
     >```sudo subscription-manager repos --enable=rhel-7-server-optional-source-rpms```
 1. Install Development Tools
     >```sudo yum --setopt=group_package_types=mandatory,default,optional groupinstall "Development Tools"```
+
+    If you get an error about git having conflicts, add `--skip-broken` to the command
 1. Install additional packages
     > `sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c xerces-c-devel`
 1. Build third-party libraries
