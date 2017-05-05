@@ -1,6 +1,10 @@
 # Known Issues
 This is the tracking page for issues, primarily bugs, on the project. It will be refreshed every Friday. This list will also be packaged with each release of the project.
 
+[#136 Install script should not create a "login" user](../issues/136)
+
+[#118 Remove obsolete pywms #118](../issues/118)
+
 [#103 .htaccess permissions are wrong](../issues/103)
 
 [#92 Default sourcedate for terrain / imagery import command doesn't work](../issues/92)
@@ -20,8 +24,6 @@ This is the tracking page for issues, primarily bugs, on the project. It will be
 [#20 Simplify build process for portable builds on MacOS](../issues/20)
 
 [#16 Vector resource build fails unless source files have write access](../issues/16)
-
-[#15 Several fusion gtest unit tests fail on RHEL 7.3](../issues/15)
 
 [#9 Improve FlileUnpacker Handling of Invalid Files](../issues/9)
 
