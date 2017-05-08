@@ -9,7 +9,11 @@ This happens because the clone/download was initiated without authenticating wit
 ## 4. I’ve built GEE Fusion and Server. Now how do I install them?
 Instructions for installing GEE Fusion and Server are available [on the wiki](https://github.com/google/earthenterprise/wiki/Install-Fusion-or-Earth-Server).
 
-## 5. Submitting Issues
+## 5. Why do I get "File has unknown problems" when trying to load a file?
+If the file type is .jp2 then it is because that format is not supported yet. If this error was encountered while executing the tutorial use the .tif file in the same directory instead.
+If it is not a jp2 file, then this error is likely due to file permissions with the sample data. Update the permissions on the files and then try to load the file again. 
+
+## 6. Submitting Issues
 If you are experiencing issues with GEE and want to report a bug please include the following in your issue:
 * Command that results in error
 * The directory the command was run in
