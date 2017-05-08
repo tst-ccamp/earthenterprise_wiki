@@ -10,8 +10,8 @@ This happens because the clone/download was initiated without authenticating wit
 Instructions for installing GEE Fusion and Server are available [on the wiki](https://github.com/google/earthenterprise/wiki/Install-Fusion-or-Earth-Server).
 
 ## 5. Why do I get "File has unknown problems" when trying to load a file?
-If the file type is .jp2 then it is because that format is not supported yet. If this error was encountered while executing the tutorial use the .tif file in the same directory instead.
-If it is not a jp2 file, then this error is likely due to file permissions with the sample data. Update the permissions on the files to have the write permission and then try to load the file again. A bug has been created to fix this issue ([#16](https://github.com/google/earthenterprise/issues/16)).
+If the file type is .jp2, then that format is not supported yet so you will see this error. If this error was encountered while executing the GEE tutorial, use the .tif file in the same directory instead.
+If it is not a .jp2 file, then this error is likely due to file permissions with the sample data. Update the permissions on the files to give write permissions to gefusionuser and then try to load the file again. A bug has been created to fix this issue ([#16](https://github.com/google/earthenterprise/issues/16)).
 
 ## 6. Submitting Issues
 If you are experiencing issues with GEE and want to report a bug please include the following in your issue:
