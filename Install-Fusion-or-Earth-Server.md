@@ -11,6 +11,8 @@ You will need to build the install package.  The install package is built using 
 
 In the commands below, you may need to change "optimize=1" to "release=1", depending on which type you used when building the source code.  You should use the same flag for both the build and install commands.
 
+**Note:** You will need to run the commands in this step before installing Fusion and again before installing Server. If you plan to install both, you can add the "-nop" flag to the fusion install command.
+
 To build the install package, run the following commands:
 
 #### **Step 1: Mandatory - copy binaries**
@@ -42,10 +44,15 @@ You will need to run the following command to download the tutorial file archive
 **At this point, you have fully built the install package.  The Fusion and Earth Server installers use this package to install their respective components.
 
 ## **Installing Fusion**
-To install fusion run the following command:
+To install fusion only run the following command:
 
     cd earth_enterprise/src/installer
     sudo ./install_fusion.sh
+
+If you plan to also install Server, instead run:
+
+    cd earth_enterprise/src/installer
+    sudo ./install_fusion.sh -nop
 
 The installer can use the default install directory of /tmp/fusion_os_install.  If you placed the install package in a different location, you can pass that location as a parameter to the installer.
 
