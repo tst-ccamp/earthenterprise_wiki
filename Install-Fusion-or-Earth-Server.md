@@ -60,6 +60,10 @@ Run the following to get an explanation of all available customizations:
 
 `sudo ./install_fusion.sh -h`
 
+**Note** The installer adds the `/opt/google/bin` to your path by adding a file to /etc/profile.d. However, these files are only read when you are first logging in and you'd need to log out and back in or reboot before this will occur. Until then, you can temporarily add the bin directory to your path by executing the following command in each bash shell you wish to run Fusion from:
+
+    export PATH=$PATH:/opt/google/bin
+
 ## **Installing Earth Server**
 To install fusion run the following command:
 
