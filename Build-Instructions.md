@@ -19,13 +19,15 @@ Run these commands on either Ubuntu or RHEL/CentOS
 2. Install git-lfs according to the instructions specified at https://git-lfs.github.com
 3. Clone the gee-os repository with git
     1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
-    >```git clone git@github.com:<username>/earthenterprise.git```
+        ```
+        git clone git@github.com:<username>/earthenterprise.git
+        ```
     1. Method 2: Clone and download LFS files in two steps
-    >```GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:<username>/earthenterprise.git```
-    
-    >```cd earthenterprise```
- 
-    >```git lfs pull```
+        ```
+        GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:<username>/earthenterprise.git
+        cd earthenterprise
+        git lfs pull
+        ```
 4. In the build instructions below, the scons commands for building GEE/Fusion have the following options:
     * `internal=1` - Build using non-optimized code, best for development and debugging
     * `optimize=1` - Build using optimized code, but with some debugging information
@@ -35,41 +37,38 @@ Run these commands on either Ubuntu or RHEL/CentOS
     * `--config=force` - If you accidentally delete the .sconf_temp directory or make some changes to your system build libraries, use this to force the configuration to run again, otherwise the scons build may complain about missing libraries
 5. Build using the steps bellow for your target platform
 6. Run unit tests
-    > `cd NATIVE-OPT-x86_64/bin/tests`
-
-    >`./RunAllTests.pl`
-
+    ```
+    cd NATIVE-OPT-x86_64/bin/tests
+    ./RunAllTests.pl
+    ```
     Or run an individual test
 
 ## Steps for Building on Ubuntu 14.04.5 LTS:
 
 1. Install git:
-    > `sudo apt-get install git` (installs version 1.9.1)
-
+    ```
+    sudo apt-get install git
+    ```
     To get the most recent version of git, do the following (version 1.9.1 works for purposes of interacting with the repository, but if you want to download the latest version of git, the steps to do this have been outlined below):
-
-    > `sudo -i`
-
-    > `add-apt-repository ppa:git-core/ppa`
-
-    > `apt-get update`
-
-    > `apt-get install git`
-
-    This will install version 2.11
+    ```
+    sudo -i
+    add-apt-repository ppa:git-core/ppa
+    apt-get update
+    apt-get install git
+    ```
+    This will install the latest version.
     _Note: Be sure to exit "sudo" before proceeding_
 
 2. Install the following packages (if they’re not installed already):
-    > `sudo apt-get install gcc g++ scons automake autoconf libperl4-corelibs-perl libtool xorg-dev doxygen python-dev alien swig libgtest-dev libstdc++6 libxml2-dev gettext libxinerama-dev libxft-dev libxrandr-dev libxcursor-dev libgdbm-dev libc6 libc6-dev libmng-dev zlib1g-dev libcap-dev libpng12-0 libpng12-dev freeglut3-dev flex libx11-dev bison++ bisonc++ libjpeg-dev libjpeg8-dev python2.7 python2.7-dev libogdi3.2-dev libgif-dev libxerces-c-dev libgeos-dev libgeos++-dev libfreetype6 libfreetype6-dev python-imaging libproj-dev python-setuptools libgif-dev libxerces-c-dev libcap-dev libpq-dev openssl libxml2-utils libxmu-dev`
-
-3. Build the third party library:
-
-    > `cd earthenterprise/earth_enterprise/src`
-
-    > `scons -j8 optimize=1 third_party`
+    ```
+    sudo apt-get install gcc g++ scons automake autoconf libperl4-corelibs-perl libtool xorg-dev doxygen python-dev alien swig libgtest-dev libstdc++6 libxml2-dev gettext libxinerama-dev libxft-dev libxrandr-dev libxcursor-dev libgdbm-dev libc6 libc6-dev libmng-dev zlib1g-dev libcap-dev libpng12-0 libpng12-dev freeglut3-dev flex libx11-dev bison++ bisonc++ libjpeg-dev libjpeg8-dev python2.7 python2.7-dev libogdi3.2-dev libgif-dev libxerces-c-dev libgeos-dev libgeos++-dev libfreetype6 libfreetype6-dev python-imaging libproj-dev python-setuptools libgif-dev libxerces-c-dev libcap-dev libpq-dev openssl libxml2-utils libxmu-dev
+    ```
 
 4. Build Fusion/Earth Server:
-    > `scons -j8 optimize=1`
+    ```
+    cd earthenterprise/earth_enterprise
+    scons -j8 optimize=1 build
+    ```
 
 ## Steps for building on RHEL 7
 
@@ -78,54 +77,47 @@ Run these commands on either Ubuntu or RHEL/CentOS
     Recommended: install the latest version of git:
 
     1. Enable the IUS repo [ [More Info] ](https://ius.io/GettingStarted/). 
-        >```sudo yum install -y wget```    
-
-        >```cd /tmp```
-
-        >```wget https://rhel7.iuscommunity.org/ius-release.rpm```
-
-        >```sudo yum install ius-release.rpm```
+        ```
+        sudo yum install -y wget
+        cd /tmp
+        wget https://rhel7.iuscommunity.org/ius-release.rpm
+        sudo yum install ius-release.rpm
+        ```
     1. Install git 2.x
-        >```sudo yum install git2u-all```
-
+        ```
+        sudo yum install git2u-all
+        ```
     Or install the system default version of git (1.8):
-
-    >```sudo yum install git```
-
+        ```
+        sudo yum install git
+        ```
 1. Install EPEL repo
-    >```sudo yum install epel-release```
-
+    ```
+    sudo yum install epel-release
+    ```
     Note, if this command doesn't work, try the alternate methods listed [here](https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/)
 1. Enable optional repos
-    >```sudo subscription-manager repos --enable=rhel-7-server-optional-rpms```
-
-    >```sudo subscription-manager repos --enable=rhel-7-server-optional-source-rpms```
+    ```
+    sudo subscription-manager repos --enable=rhel-7-server-optional-rpms
+    sudo subscription-manager repos --enable=rhel-7-server-optional-source-rpms
+    ```
 1. Install Development Tools
-    >```sudo yum --setopt=group_package_types=mandatory,default,optional groupinstall "Development Tools"```
-
+    ```
+    sudo yum --setopt=group_package_types=mandatory,default,optional groupinstall "Development Tools"
+    ```
     If you get an error about git having conflicts, add `--skip-broken` to the command
 1. Install additional packages
-    > `sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c xerces-c-devel`
-1. Build third-party libraries
-    
-    >  `cd earthenterprise/earth_enterprise/src`
-
-    >  `scons -j8 optimize=1 third_party`
+    ```
+    sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c xerces-c-devel
+    ```
 1. Build Fusion/Earth Server
-    > `scons -j8 optimize=1`
+    ```
+    cd earthenterprise/earth_enterprise
+    scons -j8 optimize=1 build
+    ```
 
 ## Install Fusion and Earth Server
 For information on how to install Fusion Pro and/or Earth Server, see [Install Fusion or Earth Server](Install-Fusion-or-Earth-Server)
-
-## Build and deploy if you have access to the 5.1.3 installer
-A build and deploy script is provided that can simplify the build and installation process if you have the GEE and Fusion 5.1.3 installers. In the future this script will be updated to work without the previous installers. 
-1. Install GEE and Fusion 5.1.3
-1. Clone repo as above
-1. Build and deploy:
-    > `cd earthenterprise/earth_enterprise/src`
-
-    > `./tmp/build_and_deploy_gee.sh --build`
-
 
 # Building Portable Server on Linux and Windows
 
