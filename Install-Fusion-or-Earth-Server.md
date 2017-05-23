@@ -28,7 +28,7 @@ In the commands below, you may need to change "optimize=1" to "release=1", depen
 At this point, you have fully built the install package.  The Fusion and Earth Server installers use this package to install their respective components.
 
 ## **Installing Fusion**
-To install fusion only run the following command:
+To install fusion run the following command:
 
     cd earth_enterprise/src/installer
     sudo ./install_fusion.sh
