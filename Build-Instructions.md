@@ -85,7 +85,7 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, RHEL 7, 
     ```
 1. Run unit tests
     ```
-    cd NATIVE-OPT-x86_64/bin/tests
+    cd src/NATIVE-OPT-x86_64/bin/tests
     ./RunAllTests.pl
     ```
     Or run an individual test
