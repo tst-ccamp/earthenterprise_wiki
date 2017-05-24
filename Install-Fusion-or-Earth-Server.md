@@ -4,7 +4,7 @@ The installer has been successfully tested on Ubuntu 14.04, Ubuntu 16.04, Red Ha
 ## **Prerequisite Steps**
 To install Fusion or Earth Server, you must prepare the install package from a successful build of the source (which contains Fusion and Earth Server source code) and Third Party packages.  For more information on building Fusion, please review the following link:
 
-[Building Earth Enterprise Fusion and Server](../Build-Instructions)
+[Building Earth Enterprise Fusion and Server](Build-Instructions)
 
 ## **Building the Install Package**
 You will need to build the install package.  The install package is built using scons.  Please note that the default temporary staging area for the install package is /tmp/fusion_os_install.  This can be changed by specifying a different **installdir** parameter. Please note that all steps must use the same directory location.
