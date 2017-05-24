@@ -2,7 +2,7 @@
 The installer has been successfully tested on Ubuntu 14.04, Ubuntu 16.04, Red Hat Enterprise Linux 7, and CentOS 7.
 
 ## **Prerequisite Steps**
-To install Fusion or Earth Server, you must prepare the install package from a successful build of the source (which contains Fusion and Earth Server source code) and Third Party packages (in release mode).  For more information on building Fusion, please review the following link:
+To install Fusion or Earth Server, you must prepare the install package from a successful build of the source (which contains Fusion and Earth Server source code) and Third Party packages.  For more information on building Fusion, please review the following link:
 
 [Building Earth Enterprise Fusion and Server](../Build-Instructions)
 
