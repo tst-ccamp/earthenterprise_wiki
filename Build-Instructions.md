@@ -26,7 +26,7 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
         ```
         sudo yum install git
         ```
-        Or install the latest version from the IUS repo [ [More Info] ](https://ius.io/GettingStarted/):
+        Or install the latest version from the IUS repo (recommended) [ [More Info] ](https://ius.io/GettingStarted/):
         ```
         sudo yum install -y wget
         cd /tmp
