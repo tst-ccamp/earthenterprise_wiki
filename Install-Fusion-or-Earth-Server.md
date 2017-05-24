@@ -9,7 +9,7 @@ To install Fusion or Earth Server, you must prepare the install package from a s
 ## **Building the Install Package**
 You will need to build the install package.  The install package is built using scons.  Please note that the default temporary staging area for the install package is /tmp/fusion_os_install.  This can be changed by specifying a different **installdir** parameter. Please note that all steps must use the same directory location.
 
-In the commands below, you may need to change "optimize=1" to "release=1", depending on which type you used when building the source code.  You should use the same flag for both the build and install commands.
+In the commands below, you may need to change "release=1" to "optimize=1", depending on which type you used when building the source code.  You should use the same flag for both the build and install commands.
 
 1. (Optional) Prepare the tutorial files
     ```
@@ -22,7 +22,7 @@ In the commands below, you may need to change "optimize=1" to "release=1", depen
 1. (Mandatory) Create the install package
     ```
     cd earthenterprise/earth_enterprise
-    scons -j8 optimize=1 stage_install
+    scons -j8 release=1 stage_install
     ```
 
 At this point, you have fully built the install package.  The Fusion and Earth Server installers use this package to install their respective components.
