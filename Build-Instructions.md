@@ -81,7 +81,7 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
 1. Build Earth Enterprise Fusion and Server:
     ```
     cd earthenterprise/earth_enterprise
-    scons -j8 optimize=1 build
+    scons -j8 release=1 build
     ```
 1. Run unit tests
     ```
