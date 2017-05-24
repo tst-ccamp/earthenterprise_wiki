@@ -35,17 +35,6 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, RHEL 7, 
         sudo yum install git2u-all
         ```
 1. Install git-lfs according to the instructions specified at https://git-lfs.github.com
-1. Clone the gee-os repository with git
-    1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
-        ```
-        git clone git@github.com:<username>/earthenterprise.git
-        ```
-    1. Method 2: Clone and download LFS files in two steps
-        ```
-        GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:<username>/earthenterprise.git
-        cd earthenterprise
-        git lfs pull
-        ```
 1. Enable additional repos
     1. On Ubuntu  
         This step is not required.
@@ -78,6 +67,17 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, RHEL 7, 
     * `-j#` - Specifies the number of simultaneous build jobs to use. Replace # with an integer. It should roughly match the number of processing cores available
     * `--debug=stacktrace` - If there is an error within a scons script, this will give you more detailed information on how to debug it
     * `--config=force` - If you accidentally delete the .sconf_temp directory or make some changes to your system build libraries, use this to force the configuration to run again, otherwise the scons build may complain about missing libraries
+1. Clone the gee-os repository with git
+    1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
+        ```
+        git clone git@github.com:<username>/earthenterprise.git
+        ```
+    1. Method 2: Clone and download LFS files in two steps
+        ```
+        GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:<username>/earthenterprise.git
+        cd earthenterprise
+        git lfs pull
+        ```
 1. Build Earth Enterprise Fusion and Server:
     ```
     cd earthenterprise/earth_enterprise
