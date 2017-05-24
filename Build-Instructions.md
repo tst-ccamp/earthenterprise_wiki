@@ -60,13 +60,6 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, RHEL 7, 
         sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c xerces-c-devel
         ```
         If you get an error about git having conflicts, add `--skip-broken` to the first command.
-1. In the build instructions below, the scons commands for building GEE/Fusion have the following options:
-    * `internal=1` - Build using non-optimized code, best for development and debugging
-    * `optimize=1` - Build using optimized code, but with some debugging information
-    * `release=1` - Build a release using optimized code and no debugging information
-    * `-j#` - Specifies the number of simultaneous build jobs to use. Replace # with an integer. It should roughly match the number of processing cores available
-    * `--debug=stacktrace` - If there is an error within a scons script, this will give you more detailed information on how to debug it
-    * `--config=force` - If you accidentally delete the .sconf_temp directory or make some changes to your system build libraries, use this to force the configuration to run again, otherwise the scons build may complain about missing libraries
 1. Clone the gee-os repository with git
     1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
         ```
@@ -78,6 +71,13 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, RHEL 7, 
         cd earthenterprise
         git lfs pull
         ```
+1. In the build instructions below, the scons commands for building GEE/Fusion have the following options:
+    * `internal=1` - Build using non-optimized code, best for development and debugging
+    * `optimize=1` - Build using optimized code, but with some debugging information
+    * `release=1` - Build a release using optimized code and no debugging information
+    * `-j#` - Specifies the number of simultaneous build jobs to use. Replace # with an integer. It should roughly match the number of processing cores available
+    * `--debug=stacktrace` - If there is an error within a scons script, this will give you more detailed information on how to debug it
+    * `--config=force` - If you accidentally delete the .sconf_temp directory or make some changes to your system build libraries, use this to force the configuration to run again, otherwise the scons build may complain about missing libraries
 1. Build Earth Enterprise Fusion and Server:
     ```
     cd earthenterprise/earth_enterprise
