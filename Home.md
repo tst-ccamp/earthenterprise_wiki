@@ -1,6 +1,6 @@
 ## Welcome to the Earth Enterprise Wiki!
 
-This wiki is a guide to building and contributing to Earth Enterprise.  For hep with Earth Enterprise, please refer to the links in [Other Resources](#other-resource) below.
+This wiki is a guide to building and contributing to Earth Enterprise.  For help with Earth Enterprise, please refer to the links in [Other Resources](#other-resource) below.
 
 # Earth Enterprise
 
