@@ -7,7 +7,7 @@
 
 # Building Earth Enterprise Fusion and Server
 
-Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, RHEL 7, and CentOS 7.
+Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, RHEL 7, and CentOS 7. **Warning: Open GEE is currently known to not work on versions of Ubuntu later than 16.04 or with versions of g++ later than 4.8.**
 
 1. Install git
     1. On Ubuntu  
