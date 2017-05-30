@@ -13,10 +13,13 @@ Instructions for installing GEE Fusion and Server are available [on the wiki](ht
 If the file type is .jp2, then that format is not supported yet so you will see this error. If this error was encountered while executing the GEE tutorial, use the .tif file in the same directory instead.
 If it is not a .jp2 file, then this error is likely due to file permissions with the sample data. Update the permissions on the files to give write permissions to gefusionuser and then try to load the file again. A bug has been created to fix this issue ([#16](https://github.com/google/earthenterprise/issues/16)).
 
-## 6. Why do I keep getting an error indicating failed to setup and configure postgresdb when trying to install GEE Server?
+## 6. Why do I get "Fusion warning: Unable to connect to System Manager: socket connect '127.0.1.1:13031': Connection refused" when I run the Fusion tool?
+The gefusion process may not be running. Try executing the command `sudo service gefusion restart`. If it was not already running this will tell you and start it. Now try your operation again. If that doesn't fix the problem it may be more serious. Consider asking your question in the Slack chat or create an issue for support.
+
+## 7. Why do I keep getting an error indicating failed to setup and configure postgresdb when trying to install GEE Server?
 The problem comes from the fact that the fusion installer will remove the /tmp/fusion_os_install directory after it successfully runs by default. So, if you ran install_fusion.sh without the -nop flag, you'll need to repeat these steps specified in the [Installation Guide](https://github.com/google/earthenterprise/wiki/Install-Fusion-or-Earth-Server#building-the-install-package) before running install_server.sh.
 
-## 7. How do I submit issues?
+## 8. How do I submit issues?
 If you are experiencing issues with GEE and want to report a bug please include the following in your issue:
 * Command that results in error
 * The directory the command was run in
