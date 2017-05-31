@@ -80,7 +80,7 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
     * `--config=force` - If you accidentally delete the .sconf_temp directory or make some changes to your system build libraries, use this to force the configuration to run again, otherwise the scons build may complain about missing libraries
 1. Build Earth Enterprise Fusion and Server:
     ```
-    cd earthenterprise/earth_enterprise
+    cd earthenterprise/earth_enterprise/src
     scons -j8 release=1 build
     ```
 1. Run unit tests
