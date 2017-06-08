@@ -25,3 +25,25 @@ If you are experiencing issues with GEE and want to report a bug please include 
 * The directory the command was run in
 * Expected result
 * Reproduction steps
+
+## 9. What client can I use for viewing globes created from Google Earth Enterprise ?
+
+Clients for 3D Globes
+
+1. Google Earth Enterprise Client - Non-Open Sourced Client by Google
+Download links available at :
+https://github.com/google/earthenterprise/wiki/Google-Earth-Enterprise-Client-(EC)
+
+Note : The Google Earth installers are currently blocked for download in these countries: Cuba, North Korea, Sudan and Syria. But some users have encountered problems not be able to reach the installers from China, that could be related to Great Firewall.
+
+Google does not permit redistribution of the installers. So please defer from sharing/distributing the installers.
+
+2.  Cesium:
+Open Sourced Web Client by AGI.
+More info on viewing globes hosted by Google Earth Enterprise in Cesium at https://cesiumjs.org/for-google-earth-developers.html
+
+## 10. Why am I getting "The Google Earth Plugin Failed to load " error when accessing the 3D globe in browser?
+
+Google Earth 3D browser plugin is no longer supported because it is based on old NPAPI technology that in general not supported by newer browsers. It might work for very old browsers though if you so much willing to try. 
+
+Also, The Plugin is not Open Sourced.
