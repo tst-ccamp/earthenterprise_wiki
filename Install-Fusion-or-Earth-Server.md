@@ -57,7 +57,8 @@ Run the following to get an explanation of all available customizations:
 
 ## **Uninstalling GEE fusion and server **
 
-run uninstall scripts from src/installer
-   'sudo earth_enterprise/src/installer/uninstall_fusion.sh'
-   'sudo earth_enterprise/src/installer/uninstall_server.sh'
+Run uninstall scripts from src/installer
+   
+   sudo earth_enterprise/src/installer/uninstall_fusion.sh
+   sudo earth_enterprise/src/installer/uninstall_server.sh
 
