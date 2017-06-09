@@ -50,9 +50,9 @@ Also, The Plugin is not Open Sourced.
 
 ## 11. Why do I receive an error when saving/working with data about a "Known Volume"?
 
-Files in GEE are expected to reside in locations known as Known Volumes. During the Install process a default known volume is chosen, which defaults to /geovol/src. It is possible to create other Known Volumes using the command "geconfigureassetroot". 
+Files in GEE are expected to reside in locations known as known volumes. During the Install process a default known volume is chosen, which defaults to /geovol/src. It is possible to create other known volumes using the command "geconfigureassetroot". 
 
-Since source files may be needed in the future when doing fusion, it makes sense to have a designated place for the source data. If you are seeing this error while working with the tutorial data, it is likely the data was installed after the installation process and not located in the correct directory. If you would like to add them to a known volume use this command:
+Since source files may be needed in the future when running fusion, it makes sense to have a designated place for the source data. If you see this error while working with the tutorial data, it is likely the data was installed after the installation process and is not located in a known volume. If you would like to add them as a known volume use this command:
 
 ```
 sudo service gefusion stop
@@ -62,6 +62,6 @@ sudo /opt/google/bin/geconfigureassetroot --addvolume tutorial:/opt/google/share
 sudo service gefusion start
 ```
 
-You can find more information, reference the documentation on this topic here: http://www.opengee.org/geedocs/answer/3481558.html#63542
+To find more information, reference the documentation on this topic here: http://www.opengee.org/geedocs/answer/3481558.html#63542
 
 In addition, there is documentation about configuring your data locations here: http://www.opengee.org/geedocs/answer/3481499.html 
