@@ -42,6 +42,8 @@ Google does not permit redistribution of the installers. So please defer from sh
 Open Sourced Web Client by AGI.
 More info on viewing globes hosted by Google Earth Enterprise in Cesium at https://cesiumjs.org/for-google-earth-developers.html
 
+No clients are not supported by this project, and bugs in clients or client usage are out-of-scope for this project. 
+
 ## 10. Why am I getting "The Google Earth Plugin Failed to load " error when accessing the 3D globe in browser?
 
 Google Earth 3D browser plugin is no longer supported because it is based on old NPAPI technology that in general not supported by newer browsers. It might work for very old browsers though if you so much willing to try. 
