@@ -67,3 +67,8 @@ sudo service gefusion start
 To find more information, reference the documentation on this topic here: http://www.opengee.org/geedocs/answer/3481558.html#63542
 
 In addition, there is documentation about configuring your data locations here: http://www.opengee.org/geedocs/answer/3481499.html 
+
+## 12. Where can I download the data for the Fusion Tutorial?
+
+For information on the Fusion Tutorial data, see this GEE support page:
+http://www.opengee.org/geedocs/answer/6028272.html
