@@ -45,7 +45,7 @@ When you are ready to commit your change to your forked repository, do so with a
 `git push origin branch_name`
  
 If you are ready to create a pull request to master, go to your forked repository’s github page and select the appropriate branch in the branch dropdown. To the right, under the clone button, a “pull request” label will appear. Click this to start the pull request process. Perform a sanity check on the number of commits and the files changed before creating the pull request. Add a description with the following info into the request description box: 
-A concise description of the change being made
+* A concise description of the change being made
 * Reproduction steps for testing the fix
 * Operating System(s) tested on
 * A “Fixes” line for each issue this change is fixing Ex: 
