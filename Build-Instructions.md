@@ -35,6 +35,11 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
         sudo yum install git2u-all
         ```
 1. Install git-lfs according to the instructions specified at https://git-lfs.github.com
+    
+    In most cases:
+    ```
+    curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+    ```
 1. Enable additional repos
     1. On Ubuntu  
         This step is not required.
