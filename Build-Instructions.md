@@ -90,7 +90,7 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
     ```
 1. Run unit tests
     ```
-    cd src/NATIVE-OPT-x86_64/bin/tests
+    cd src/NATIVE-REL-x86_64/bin/tests
     ./RunAllTests.pl
     ```
     Or run an individual test
