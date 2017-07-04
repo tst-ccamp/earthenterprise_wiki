@@ -72,3 +72,9 @@ In addition, there is documentation about configuring your data locations here: 
 
 For information on the Fusion Tutorial data, see this GEE support page:
 http://www.opengee.org/geedocs/answer/6028272.html
+
+#13. While trying to create a mask for an image in fusion, I keep getting this 
+error message "A XXXXX pixels x YYYYYY lines mask would be too large. 
+Creation failed"
+
+This is due to an old size limitation in GeoTIFFs. You may want to downsample the imagery and try again.
