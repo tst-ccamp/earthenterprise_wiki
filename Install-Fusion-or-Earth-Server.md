@@ -55,6 +55,11 @@ Run the following to get an explanation of all available customizations:
 
 `sudo ./install_server.sh -h`
 
+## **Installing Tutorial Data**
+To install Tutorial Data after installing Fusion, run the following command:
+
+    sudo /opt/google/share/tutorials/fusion/download_tutorial.sh
+
 ## **Uninstalling GEE fusion and server**
 Run uninstall scripts from src/installer
     
