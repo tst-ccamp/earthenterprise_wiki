@@ -1,29 +1,35 @@
 ## Table of Contents
 
-1. [Building Portable Server on Linux and Windows](#building-portable-server-on-linux-and-windows)
+1. [Portable Server Prerequisites](#portable-server-prerequisites)
+    1. [Build Prerequisites](#build-prerequisites)
+    1. [Run-time Prerequisites](#run-time-prerequisites)
+1. [Portable Server on Linux](#portable-server-on-linux)
     1. [Building on Linux](#building-on-linux)
-    1. [Building on Windows](#building-on-windows)
-1. [Installing Portable Server on Linux and Windows](#installing-portable-server-on-linux-and-windows)
     1. [Installing on Linux](#installing-on-linux)
-    1. [Installing on Windows](#installing-on-windows)
-1. [Running Portable Server on Linux and Windows](#running-portable-server-on-linux-and-windows)
     1. [Running on Linux](#running-on-linux)
+1. [Portable Server on Windows](#portable-server-on-windows)
+    1. [Building on Windows](#building-on-windows)
+    1. [Installing on Windows](#installing-on-windows)
     1. [Running on Windows](#running-on-windows)
+1. [Portable Server on Mac OS](#portable-server-on-mac-os)
 
-# Building Portable Server on Linux and Windows
 
-Software build prerequisites:
+# Portable Server Prerequisites
+
+## Build Prerequisites:
 
     * Python
     * Python pexpect installed
     * Swig with support for Python
     * g++
 
-Portable run-time prerequisites:
+## Run-time prerequisites:
 
     * Python
     * Python tornado installed
 
+
+# Portable Server on Linux
 
 ## Building on Linux
 
@@ -43,6 +49,26 @@ To clean build files, run
 
     earthenterprise/earth_enterprise/src/portableserver/build.py --clean
 
+
+## Installing on Linux
+
+Portable Server is not currently packaged for Linux distributions by the GEE Open Source team. Instead, just extract the tarball generated in the [Building on Linux](#building-on-linux) step in a directory you want to run it from.  You could also create links, or start-up shell scripts for your convenience.
+
+You need to have the same Python interpreter and Python packages set up and installed that you need for the [Building on Linux](#building-on-linux) step in order to run Portable Server.
+
+
+## Running on Linux
+
+Change into the directory you extracted the built Portable Server tarball into (in the [Installing on Linux](#installing-on-linux) step).  Then, just start `server/portable_server.py`:
+
+    1. cd portableserver-linux-5.1.3-20170412/server/ #(substituting your extracted directory)
+    1. python portable_server.py
+
+You can edit `portableserver-linux-5.1.3-20170412/server/portable.cfg` and `portableserver-linux-5.1.3-20170412/server/remote.cfg` for your configuration needs before starting the server.
+
+
+
+# Portable Server on Windows
 
 ## Building on Windows
 
@@ -89,32 +115,11 @@ To clean build files, run
     python earthenterprise\earth_enterprise\src\portableserver\build.py --clean
 
 
-# Installing Portable Server on Linux and Windows
-
-## Installing on Linux
-
-Portable Server is not currently packaged for Linux distributions by the GEE Open Source team. Instead, just extract the tarball generated in the [Building on Linux](#building-on-linux) step in a directory you want to run it from.  You could also create links, or start-up shell scripts for your convenience.
-
-You need to have the same Python interpreter and Python packages set up and installed that you need for the [Building on Linux](#building-on-linux) step in order to run Portable Server.
-
-
 ## Installing on Windows
 
 We do not currently provide a Windows installer for Portable Server. Instead, just extract the built Portable Server from the Zip archive generated in the [Building on Windows](#building-on-windows) step in a directory you want to run it from.
 
 You need to have the same Python interpreter and Python packages set up and installed that you need during the [Building on Windows](#building-on-windows) step in order to run Portable Server.
-
-
-# Running Portable Server on Linux and Windows
-
-## Running on Linux
-
-Change into the directory you extracted the built Portable Server tarball into (in the [Installing on Linux](#installing-on-linux) step).  Then, just start `server/portable_server.py`:
-
-    1. cd portableserver-linux-5.1.3-20170412/server/ #(substituting your extracted directory)
-    1. python portable_server.py
-
-You can edit `portableserver-linux-5.1.3-20170412/server/portable.cfg` and `portableserver-linux-5.1.3-20170412/server/remote.cfg` for your configuration needs before starting the server.
 
 
 ## Running on Windows
@@ -125,3 +130,11 @@ Change into the directory you extracted the built Portable Server Zip archive in
     1. python portable_server.py
 
 You can edit `portableserver-windows-5.1.3-20170412\server\portable.cfg` and `portableserver-windows-5.1.3-20170412\server\remote.cfg` for your configuration needs before starting the server.
+
+
+
+# Portable Server on Mac OS
+
+Currently, building and running Portable Server on Mac OS has not been tested.
+
+Previous versions have run on Mac OS, and the `build.py` script has untested logic for running the Mac OS build commands.  However, at present, you'll have to fix any problems you run into on Mac OS.
