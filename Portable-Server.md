@@ -54,7 +54,7 @@ To clean build files, run
 
 Portable Server is not currently packaged for Linux distributions by the GEE Open Source team. Instead, just extract the tarball generated in the [Building on Linux](#building-on-linux) step in a directory you want to run it from.  You could also create links, or start-up shell scripts for your convenience.
 
-You need to have the same Python interpreter and Python packages set up and installed that you need for the [Building on Linux](#building-on-linux) step in order to run Portable Server.
+You need to have the Python interpreter and package dependencies listed in [Run-time Prerequisites](#run-time-prerequisites) set up and installed in order to run Portable Server.  If you carried out the [Building on Linux](#building-on-linux) step, you already have all of the required dependencies.
 
 
 ## Running on Linux
@@ -119,7 +119,7 @@ To clean build files, run
 
 We do not currently provide a Windows installer for Portable Server. Instead, just extract the built Portable Server from the Zip archive generated in the [Building on Windows](#building-on-windows) step in a directory you want to run it from.
 
-You need to have the same Python interpreter and Python packages set up and installed that you need during the [Building on Windows](#building-on-windows) step in order to run Portable Server.
+You need to have the Python interpreter and packages listed in [Run-time Prerequisites](#run-time-prerequisites) set up and installed in order to run Portable Server.  If you carried out the [Building on Windows](#building-on-windows) step, you already have the required dependencies.
 
 
 ## Running on Windows
