@@ -6,12 +6,12 @@ In order to have a smoothly running project, formal roles with corresponding res
 
 <table>
   <tr>
-    <td>Public Access</td>
-    <td>Collaborator - Read access</td>
-    <td>Collaborator - Write access</td>
-    <td>Owner</td>
+    <td><b>Public Access</b></td>
+    <td><b>Collaborator - Read access</b></td>
+    <td><b>Collaborator - Write access</b></td>
+    <td><b>Owner</b></td>
   </tr>
-  <tr>
+  <tr valign="top">
     <td>
 
 - Read access
