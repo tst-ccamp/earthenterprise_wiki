@@ -7,6 +7,8 @@ OpenGEE has been successfully built and run on the 64-bit version of the followi
 * CentOS 7
 * Red Hat Enterprise Linux 7
 
+There are known issues with building and running OpenGEE on Ubuntu 16.10 and later.
+
 ### Supported Compilers
 
 OpenGEE has been successfully compiled with the following versions of GCC:
