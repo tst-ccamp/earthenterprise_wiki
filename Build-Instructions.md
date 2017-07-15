@@ -86,7 +86,8 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
     cd earthenterprise/earth_enterprise
     scons -j8 release=1 build
     ```
-1. Run unit tests
+1. Run unit tests (note that the `REL` part of the path will vary if you use `internal=1` or `optimize=1` instead
+of `release=1`).
     ```
     cd src/NATIVE-REL-x86_64/bin/tests
     ./RunAllTests.pl
