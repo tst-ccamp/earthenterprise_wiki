@@ -35,7 +35,7 @@
 
 Make sure you have Python, the `pexpect` Pip package, as well as `tornado`, g++, and Swig with Python support installed.  E.g.:
 
-    sudo apt-get install g++ python python-pexpect python-tornado swig
+    sudo apt-get install g++ python python-pexpect python-tornado swig python-psycopg2
 
 Run
 
