@@ -4,7 +4,7 @@ The Google Earth Enterprise Client (EC) is required to connect to Earth Server a
 
 Note that product updates for EC will be limited to critical fixes i.e. security patches and bugs that significantly impair functionality, as determined by Google.  For support on EC, visit the [Earth Help Forum](https://productforums.google.com/forum/#!categories/maps/google-earth).
 
-Installers for the most current version of EC are available through the following links:
+Installers for the most current version (7.3.0) of EC are available through the following links:
 * https://dl.google.com/dl/earth/client/advanced/current/googleearthecwin.exe  (Windows)
 * https://dl.google.com/dl/earth/client/advanced/current/googleearthecmacnoupdate-intel.dmg  (Mac)
 * https://dl.google.com/dl/earth/client/current/google-earth-ec-stable_current_amd64.deb  (Debian Linux 64-bit)
