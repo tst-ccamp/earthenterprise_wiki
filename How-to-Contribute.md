@@ -9,6 +9,16 @@ Earth Enterprise welcomes community contributions! If you’re interested in mak
 3. Begin a discussion on the issue describing the intended changes. Earth Enterprise developers can help hash out the approach and make sure everyone is on the same page before too much time is spent writing the code changes and associated tests.
 4. Make the code changes and open a pull request.
 
+### Coding style ###
+
+Follow the [Google Style Guides](https://google.github.io/styleguide/) for contributions to Open GEE
+
+1. [C++](https://google.github.io/styleguide/cppguide.html)
+1. [Python](https://google.github.io/styleguide/pyguide.html)
+1. [JavaScript](https://google.github.io/styleguide/jsguide.html)
+1. [XML](https://google.github.io/styleguide/xmlstyle.html)
+1. [Bash Scripts](https://google.github.io/styleguide/shell.xml)
+
 ## Contributor License Agreement
 
 Contributions to this project must be accompanied by a Contributor License Agreement. You (or your employer) retain the copyright to your contribution, this simply gives us permission to use and redistribute your contributions as part of the project. Head over to https://cla.developers.google.com/ to see your current agreements on file or to sign a new one.
