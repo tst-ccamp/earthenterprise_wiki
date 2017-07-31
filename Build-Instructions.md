@@ -63,30 +63,18 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
         sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c xerces-c-devel
         ```
         If you get an error about git having conflicts, add `--skip-broken` to the first command.
-1. Clone the gee-os repository with git
-    1. For development (If you just want to build without submitting changes back to the repo, skip to the next step)
-        1. Fork the GitHub repo by hitting the `Fork` button on the [https://github.com/google/earthenterprise](Google/EarthEnterprise Repo Page)
-        1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
-            ```
-            git clone git@github.com:<username>/earthenterprise.git
-            ```
-        1. Method 2: Clone and download LFS files in two steps
-            ```
-            GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:<username>/earthenterprise.git
-            cd earthenterprise
-            git lfs pull
-            ```
-        1. Add a remote link to the upstream repo
-            ```
-            cd earthenterprise (if needed)
-            git remote add upstream git@github.com:google/earthenterprise.git
-            ```
-
-            Note: your `origin` remote link will be set to your fork on GitHub
- 
-    1. To just clone the repo without setting it up for development
+1. Clone the EarthEnterprise repository in your build environment
+    
+    Note: for development you should follow the instructions on the [[Git Contributions]] page to clone the repo
+    1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
         ```
         git clone git@github.com:google/earthenterprise.git
+        ```
+    1. Method 2: Clone and download LFS files in two steps
+        ```
+        GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:google/earthenterprise.git
+        cd earthenterprise
+        git lfs pull
         ```
 
 
