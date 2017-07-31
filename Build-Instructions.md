@@ -64,16 +64,32 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
         ```
         If you get an error about git having conflicts, add `--skip-broken` to the first command.
 1. Clone the gee-os repository with git
-    1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
+    1. For development (If you just want to build without submitting changes back to the repo, skip to the next step)
+        1. Fork the GitHub repo by hitting the `Fork` button on the [https://github.com/google/earthenterprise](Google/EarthEnterprise Repo Page)
+        1. Method 1: Clone and download LFS files in one step (may be slower and more error prone)
+            ```
+            git clone git@github.com:<username>/earthenterprise.git
+            ```
+        1. Method 2: Clone and download LFS files in two steps
+            ```
+            GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:<username>/earthenterprise.git
+            cd earthenterprise
+            git lfs pull
+            ```
+        1. Add a remote link to the upstream repo
+            ```
+            cd earthenterprise (if needed)
+            git remote add upstream git@github.com:google/earthenterprise.git
+            ```
+
+            Note: your `origin` remote link will be set to your fork on GitHub
+ 
+    1. To just clone the repo without setting it up for development
         ```
-        git clone git@github.com:<username>/earthenterprise.git
+        git clone git@github.com:google/earthenterprise.git
         ```
-    1. Method 2: Clone and download LFS files in two steps
-        ```
-        GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:<username>/earthenterprise.git
-        cd earthenterprise
-        git lfs pull
-        ```
+
+
 1. In the build instructions below, the scons commands for building GEE/Fusion have the following options:
     * `internal=1` - Build using non-optimized code, best for development and debugging
     * `optimize=1` - Build using optimized code, but with some debugging information
