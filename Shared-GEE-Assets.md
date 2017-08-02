@@ -40,3 +40,24 @@ Land data are based on the 1-km averages of topography derived from the USGS SRT
 | ------------- | ------------- | ----------------|----------|-----------------|-------------|
 | 11            | 3.39 Gigabytes| [Scripps Institution of Oceanography, UCSD](http://www.google.com/url?q=http%3A%2F%2Ftopex.ucsd.edu%2FWWW_html%2Fsrtm30_plus.html&sa=D&sntz=1&usg=AFQjCNEWcSk9YfA5cRLXG5jngcZPDuq9YA),  via [eAtlas.org.au](http://www.google.com/url?q=http%3A%2F%2Featlas.org.au%2Fdata%2Fuuid%2F80301676-97fb-4bdf-b06c-e961e5c0cb0b&sa=D&sntz=1&usg=AFQjCNE-LWEyAQg6_fKVspF7XHD05FR3Rg)| gs://gee-data/SRTM30PlusV8/| Public| No |
 
+## Where can I find more data?
+
+GEE provides sample test data to exercise in the tutorials. However, it does not provide any other data to use with the product. More data can be found publicly available for various use cases. Below is a list of some useful sources:
+
+### Vector Data:
+
+[http://www.naturalearthdata.com/](http://www.naturalearthdata.com/)
+
+[https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/)
+
+### Terrain Data:
+
+[https://nationalmap.gov/](https://nationalmap.gov/)
+
+### Imagery Data:
+
+[https://github.com/olivierhagolle/LANDSAT-Download](https://github.com/olivierhagolle/LANDSAT-Download)
+
+### Other Sources:
+
+[https://www.data.gov/](https://www.data.gov/)
