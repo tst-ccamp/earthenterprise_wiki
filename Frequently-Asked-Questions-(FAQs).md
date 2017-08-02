@@ -58,14 +58,14 @@ sudo /opt/google/bin/geconfigureassetroot --addvolume tutorial:/opt/google/share
 sudo service gefusion start
 ```
 
-To find more information, reference the documentation on this topic here: http://www.opengee.org/geedocs/answer/3481558.html#63542
+To find more information, reference the documentation on this topic here: http://www.opengee.org/geedocs/5.2.1/answer/3481558.html#63542
 
-In addition, there is documentation about configuring your data locations here: http://www.opengee.org/geedocs/answer/3481499.html 
+In addition, there is documentation about configuring your data locations here: http://www.opengee.org/geedocs/5.2.1/answer/3481499.html 
 
 ## Where can I download the data for the Fusion Tutorial?
 
 For information on the Fusion Tutorial data, see this GEE support page:
-http://www.opengee.org/geedocs/answer/6028272.html
+http://www.opengee.org/geedocs/5.2.1/answer/6028272.html
 
 ## While trying to create a mask for an image in fusion, I keep getting this 
 error message "A XXXXX pixels x YYYYYY lines mask would be too large. 
