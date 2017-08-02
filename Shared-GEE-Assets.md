@@ -48,7 +48,7 @@ GEE provides sample test data to exercise in the tutorials. However, it does not
 
 [http://www.naturalearthdata.com/](http://www.naturalearthdata.com/)
 
-[https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/)
+[https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/) - also has terrain data (SRTM DTED and some higher resolution DEMs) and Imagery, especially over the US.
 
 ### Terrain Data:
 
