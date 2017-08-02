@@ -119,4 +119,4 @@ The OpenGEE project will abide by the Apache v2 license. [https://www.apache.org
 
 The Apache License (ASL) is a permissive free software license written by the Apache Software Foundation (ASF) The Apache License requires preservation of the copyright notice and disclaimer. Like other free software licenses, the license allows the user of the software the freedom to use the software for any purpose, to distribute it, to modify it, and to distribute modified versions of the software, under the terms of the license, without concern for royalties.
 
-*This work is based upon "**[Meritocratic Governance Mode*l](http://www.oss-watch.ac.uk/resources/meritocraticGovernanceModel)*" by University of Oxford.*
+*This work is based upon "**[Meritocratic Governance Model](http://www.oss-watch.ac.uk/resources/meritocraticGovernanceModel)**" by University of Oxford.
