@@ -71,6 +71,8 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
         sudo yum install scons perl-Perl4-CoreLibs xorg-x11-server-devel python-devel perl-Alien-Packages gtest-devel openssl-devel libxml2-devel libXinerama-devel libXft-devel libXrandr-devel libXcursor-devel gdbm-devel libmng-devel libcap-devel libpng12-devel libXmu-devel freeglut-devel zlib-devel libX11-devel bison-devel openjpeg-devel openjpeg2-devel geos-devel proj-devel ogdi-devel giflib-devel xerces-c xerces-c-devel
         ```
         If you get an error about git having conflicts, add `--skip-broken` to the first command.
+
+        Note: if you are upgrading from GEE 5.1.3 or before, you must run this step after uninstalling older versions of GEE.  Otherwise, some of the prerequisites will be missing and your build will fail.
 1. Clone the EarthEnterprise repository in your build environment
     
     Note: for development you should follow the instructions on the [[Git Contributions]] page to clone the repo
