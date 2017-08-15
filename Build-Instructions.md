@@ -32,9 +32,17 @@ Building is currently supported on 64-bit versions of Ubuntu 14.04 LTS, Ubuntu 1
 1. Install git-lfs according to the instructions specified at https://git-lfs.github.com
     
     In most cases:
+    1. In Ubuntu:
     ```
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+    sudo apt install git-lfs
     ```
+    1. In CentOS/RHEL:
+    ```
+    curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
+    sudo yum install git-lfs
+    ```
+
 1. Enable additional repos
     1. On Ubuntu  
         This step is not required.
