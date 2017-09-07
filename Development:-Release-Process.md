@@ -39,7 +39,7 @@ Once work on a release has been completed:
 1. **Create the release in Github**  
   For instructions, see https://help.github.com/articles/creating-releases/.  Be sure to specify the release branch.  The tag should be `X.Y.Z-W.final` where X.Y.Z is the version number and W is one more than the last beta number.
 1. **Merge changes back into master**  
-  Merge the release branch back into master so that any changes made during the release are included in master.  This may involve resolving some merge conflicts if work for the next release has already been merged into master.
+  Merge the release branch back into master so that any changes made during the release are included in master.  This may involve resolving some merge conflicts if other work has already been merged into master.
 1. **Copy docs for next release**  
   This step can be done on master at any point after the release notes and version number changes have been merged back into master.  The main concern is to ensure that these changes don't end up in the release.  
   On the master branch:
