@@ -40,6 +40,12 @@ When creating a commit message please include the issue number so that git will 
 `Replaced all fizzbars with foobars. Unit test fixed per issue request (#102)`
  
 ### Pushing your commit
+Make sure git user.name an user.email are configured correct. This must be the email used to sign up the [CLA](https://cla.developers.google.com/clas)
+
+`git config --global user.name`  ( also can be changed to `--local`, depending on your preference)
+
+`git config --global user.email`
+
 When you are ready to commit your change to your forked repository, do so with a git push.
  
 `git push origin branch_name`
