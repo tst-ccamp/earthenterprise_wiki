@@ -39,7 +39,7 @@ Once work on a release has been completed:
 1. **Create the release in Github**  
   For instructions, see https://help.github.com/articles/creating-releases/.  Be sure to specify the release branch.  The tag should be `X.Y.Z-W.final` where X.Y.Z is the version number and W is one more than the last beta number.
 1. **Merge changes back into master**  
-  Merge the release branch back into master so that any changes made during the release are included in master.
+  Merge the release branch back into master so that any changes made during the release are included in master.  This may involve resolving some merge conflicts if work for the next release has already been merged into master.
 1. **Copy docs for next release**  
   This step can be done on master at any point after the release notes and version number changes have been merged back into master.  The main concern is to ensure that these changes don't end up in the release.  
   On the master branch:
@@ -62,4 +62,4 @@ Once work on a release has been completed:
   Write and publish a blog post announcing the new release and highlighting some of the major changes.  Also announce the release on the Google Earth Enterprise Google Group with a link to the blog post.
 
 ### Merging the release branch into master
-The release branch can be merged into master at any point during the release process to bring changes made for the release into the master branch.  This may be necessary to bring fixes that were included on the release branch into master in a timely manner.  The release branch can be merged into master multiple times, so you can continue doing work on the release branch after merging it into master.  Keep in mind, however, that this will publish any documentation changes from the release branch (such as the release notes) on opengee.org.  If changes do not need to be brought into master immediately you can wait until the end of the release process when all changes will be merged to master.
+The release branch can be merged into master at any point during the release process to bring changes made for the release into the master branch.  This may be necessary to bring fixes that were included on the release branch into master in a timely manner.  The release branch can be merged into master multiple times, so you can continue doing work on the release branch after merging it into master.  Keep in mind, however, that this will publish any documentation changes from the release branch (such as the release notes) on opengee.org.  Also note that you may have to resolve merge conflicts if other work has already been merged into master since the release branch was created. If changes do not need to be brought into master immediately you can wait until the end of the release process when all changes will be merged to master.
