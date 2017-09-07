@@ -2,7 +2,7 @@ We’d love to accept your patches and contributions to this project. There are 
 
 ### Contributing to Earth Enterprise
 
-Earth Enterprise welcomes community contributions! If you’re interested in making a contribution to this project, please follow the [guidelines](https://github.com/google/earthenterprise/blob/master/CONTRIBUTING.md) before you start writing any code:
+Earth Enterprise welcomes community contributions! If you’re interested in making a contribution to this project, please follow the [guidelines](https://github.com/google/earthenterprise/blob/master/CONTRIBUTING.md) and [git fork basics](https://github.com/google/earthenterprise/wiki/Development:-Git-Contributions) before you start writing any code:
 
 1. Sign the contributor's agreement. This will allow us to review and accept contributions.
 2. Reach out to us to discuss your contribution. Either update an existing issue, or create a new one that describes the change you would like to work on. If in doubt, feel free to just create a new issue.
