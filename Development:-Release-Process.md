@@ -59,7 +59,7 @@ Once work on a release has been completed:
 1. **Update README.md**  
   Update the main README.md page for the Github repo to include a link to the latest release and the latest docs.
 1. **Announce the release**  
-  Write and publish a blog post announcing the new release and highlighting some of the major changes.  Also announce the release on the Google Earth Enterprise Google Group with a link to the blog post.
+  Write and publish a blog post announcing the new release and highlighting some of the major changes.  Also announce the release on the Google Earth Enterprise Google Group and the Slack channel with a link to the blog post.
 
 ### Merging the release branch into master
 The release branch can be merged into master at any point during the release process to bring changes made for the release into the master branch.  This may be necessary to bring fixes that were included on the release branch into master in a timely manner.  The release branch can be merged into master multiple times, so you can continue doing work on the release branch after merging it into master.  Keep in mind, however, that this will publish any documentation changes from the release branch (such as the release notes) on opengee.org.  Also note that you may have to resolve merge conflicts if other work has already been merged into master since the release branch was created. If changes do not need to be brought into master immediately you can wait until the end of the release process when all changes will be merged to master.
