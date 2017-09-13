@@ -83,8 +83,10 @@ You can edit `portableserver-linux-5.1.3-20170412/server/portable.cfg` and `port
 
 You can install [MinGW](http://www.mingw.org/) with a g++ compiler, or run the build from a Git-BASH or Git-Cmd shell from [Git-Scm](https://git-scm.com/), which should come with `g++`.
 
-Make sure `g++` is in your `PATH`.
+Make sure `g++`, `swig` and `python` are set in your `PATH`. Git Bash would have 64bit MinGW, so Git Bash might not work by default.
 
+e.g. PATH
+`C:\swigwin-3.0.12;C:\Python27;C:\MinGW\bin;C:\Program Files\.....`
 
 ### Install Swig with Python Support
 
