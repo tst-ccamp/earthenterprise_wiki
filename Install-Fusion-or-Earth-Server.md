@@ -1,5 +1,5 @@
 ## **Supported Operating Systems**
-The installer has been successfully tested on Ubuntu 14.04, Ubuntu 16.04, Red Hat Enterprise Linux 7, and CentOS 7.
+The installer has been successfully tested on Ubuntu 14.04, Ubuntu 16.04, Red Hat Enterprise Linux 6, Red Hat Enterprise Linux 7, CentOS 6, and CentOS 7.
 
 ## **Prerequisite Steps**
 
