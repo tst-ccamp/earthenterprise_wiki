@@ -37,7 +37,7 @@ Make sure you have Python, the `pexpect` Pip package, as well as `tornado`, g++,
 
 On Ubuntu:
 
-    sudo apt-get install g++ python python-pexpect python-tornado swig python-psycopg2
+    sudo apt-get install g++ python python-pexpect python-tornado libpython-dev swig python-psycopg2
 
 On CentOS/RHEL:
 
