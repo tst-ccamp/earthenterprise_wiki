@@ -19,7 +19,6 @@ In the commands below, you may need to change "release=1" to "optimize=1", depen
 1. (Optional) Prepare the tutorial files
     ```
     cd earthenterprise/earth_enterprise/tutorial
-    mkdir FusionTutorial
     wget http://data.opengee.org/FusionTutorial-Full.tar.gz
     tar -xvzf FusionTutorial-Full.tar.gz -C FusionTutorial
     ```
