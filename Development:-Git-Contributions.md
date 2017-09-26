@@ -3,7 +3,7 @@
 ## Establishing SSH Key
 Before beginning, you will first need to make sure that an SSH key has been generated for your account, and that the key exists locally as well. This can be accomplished by following instructions mentioned here: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
-If this is not in place, you will experience permissions errors when cloning and pushing.
+If this is not in place, you will experience permissions errors when cloning and pushing. Make sure that ~/.ssh/id_rsa (your private key, id_rsa.pub is the public key) has permissions set to 600 (chmod 600 ~/.ssh/id_rsa).
 
 ## Fork and Clone
 To work with your own copy of GEE, you will first need to create a fork. From the main GEE github page (https://github.com/google/earthenterprise) click the Fork button in the top right. Once the fork has completed you will then need clone the repository. Lastly, you will need to configure the upstream repository for receiving and creating updates.
