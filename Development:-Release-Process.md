@@ -2,7 +2,7 @@
 This document describes the process for creating an Open GEE release.
 
 ### A Note on Version Numbering
-Open GEE uses [semantic versioning](http://semver.org/) for its releases.  However, semantic versioning is incompatible with how package managers like yum and apt order releases (in yum and apt, 5.2.0-beta1 comes *after* 5.2.0).  In Open GEE, our "real" version numbers follow semantic versioning, but our git tags match the version numbers used for package managers.  The git tags include the "real" version number, but they also include additional information that makes them valid for yum and apt.
+Open GEE version numbers are designed to work well with package managers like yum and apt.  In yum and apt, 5.2.0-beta1 comes *after* 5.2.0.  Thus, all version numbers for Open GEE have a dash at the end that indicates whether the release is beta or final and the order of the releases.
 
 ### Release Process
 Once work on a release has been completed:
