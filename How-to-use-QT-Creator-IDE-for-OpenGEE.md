@@ -1,6 +1,8 @@
 # Introduction
 This document outlines the steps needed to setup QT creator as an integrated development environment (IDE) to build, debug, and maintain OpenGEE source code.
 
+It should be noted that this is purely for purposes of setting up an IDE, as current versions of QT creator do not support QT 3.
+
 # Prerequisites
 * QT Creator: http://www.qt.io/download
 * OpenGee Source: https://github.com/google/earthenterprise.git
