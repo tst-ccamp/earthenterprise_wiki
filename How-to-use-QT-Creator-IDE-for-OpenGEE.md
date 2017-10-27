@@ -89,6 +89,8 @@ On left panel click **Projects**, then click **Run** and add the parameters for 
 Once this done, go back to QT Creator menu, then **Debug → Start Debugging** (or **F5**). This would build OpenGEE and start ‘Fusion’ in debug mode.
 Debug breakpoints can be inserted into the code to break the execution at the appropriate code lines.
 
+_Note: Running the app via pressing F5 causes the build to be refreshed and the tests to be run, and can be avoided by using the 'Start Debugging without deployment' option._
+
 [[/images/StartDebugging.png|start debugging]]
 
 Alternatively you can start any app outside from the IDE (fusion, server, any of the tools) and go back to the **IDE Debug → Attach to running application**.
