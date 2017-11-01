@@ -15,7 +15,7 @@ Once work on a release has been completed:
   The following files need to be updated with the latest version number. Commit these updates to the release branch.
     - earth_enterprise/src/support/geecheck/geecheck.pl (2 places)
     - earth_enterprise/src/third_party/apache2/apache-ge-index.shtml
-    - earth_enterprise/src/fusion_version.txt (2 places)
+    - earth_enterprise/src/fusion_version.txt
     - earth_enterprise/src/fusion/portableglobe/cutter/cgi-bin/geecheck_tests/common.py
     - earth_enterprise/src/installer/common.sh (2 places)  
 1. **Update documentation**  

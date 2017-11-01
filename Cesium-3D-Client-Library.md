@@ -17,6 +17,7 @@ Provides tiled terrain using the Google Earth Enterprise REST API.
 [Getting Started](https://cesiumjs.org/tutorials/cesium-up-and-running/)
 
 ### Example
+```html
    <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -61,3 +62,4 @@ Provides tiled terrain using the Google Earth Enterprise REST API.
   
 
     </html>
+```
